@@ -1,0 +1,16 @@
+@import '../partials.scss';
+
+.b-head-icon {
+  @include master-icon--light();
+  @include master-icon--cart();
+
+  @media (min-width: $screen-xs-min) {
+   &--fill {
+       background: transparent;
+
+    }
+    .icon-svg {
+        font-size: 28px;
+    }
+  }
+}

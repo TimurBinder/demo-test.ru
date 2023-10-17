@@ -1,0 +1,52 @@
+.sorter {
+  @extend .clearfix;
+
+  &__item {
+    float: left;
+    margin-right: $line-height-computed*0.75;
+
+    .dropdown {
+      display: inline-block;
+    }
+
+    .btn-group .btn-default {
+      border-color: $input-border;
+    }
+
+    .btn-lg {
+      border-width: 1px;
+    }
+
+    &-views {
+      float: right;
+      margin: 0;
+
+      .btn-default {
+        &:hover,
+        &:active {
+          background-color: darken($btn-primary-bg, 10%);
+          border-color: darken($btn-primary-border, 10%);
+          color: $btn-primary-color;
+        }
+        &.active {
+          background-color: $btn-primary-bg;
+          border-color: $btn-primary-border;
+          color: $btn-primary-color;
+        }
+      }
+
+      .btn-lg {
+        font-size: 18px;
+        padding: 7.5px  11px;
+      }
+      
+      .icon {
+        margin: -3px 0 0;
+      }
+    }
+  }
+
+  &__name {
+    margin-right: $line-height-computed/4;
+  }
+}

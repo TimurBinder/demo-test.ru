@@ -1,0 +1,23 @@
+body.ff_pt_sans {
+  font-family: 'PT Sans', sans-serif;
+}
+
+body.ff_roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+body.fs_small {
+  &,
+  .product-item-title,
+  .tile__name {
+    font-size: 13px;
+  }
+}
+
+body.fs_big {
+  &,
+  .product-item-title,
+  .tile__name {
+    font-size: 15px;
+  }
+}

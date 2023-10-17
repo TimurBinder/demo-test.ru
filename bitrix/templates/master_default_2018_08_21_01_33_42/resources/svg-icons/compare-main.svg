@@ -1,0 +1,11 @@
+<svg id="compare-main" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+<defs>
+    <style>
+      .cls-compare-main {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-compare-main" d="M2,4h9V16H2V4ZM3,5h7V15H3V5Z"/>
+  <path class="cls-compare-main" d="M4,4H5V1h8V12H11v1h3V0H4V4Z"/>
+</svg>

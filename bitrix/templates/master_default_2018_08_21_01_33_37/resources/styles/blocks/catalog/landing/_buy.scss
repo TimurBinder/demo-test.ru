@@ -1,0 +1,50 @@
+.landing__buy {
+
+    &-title {
+        h3 {
+            font-size: pxtoem(20px);
+            font-weight: 400;
+        }        
+    }
+    
+    &-center {
+        text-align: center;
+    }
+
+    &-left {
+        text-align: left;
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    &-price {
+        //margin:0 0 10px;
+
+        .product-item-detail-price-current,
+        .product-item-detail-price-old {
+            font-size: pxtoem(28px);
+            display: block;
+            font-weight: normal;
+        }
+        .product-item-detail-price-current.discount {
+            font-weight: bold;
+        }
+    }
+
+    &-pic {
+        max-width: 400px;
+        margin: 20px auto;
+        max-height: 200px;
+        width: auto;
+        height: auto;
+
+        img { 
+            max-height: 200px;
+            max-width: 400px;
+            width: auto;
+            height: auto;
+        }
+    }
+    
+    
+}

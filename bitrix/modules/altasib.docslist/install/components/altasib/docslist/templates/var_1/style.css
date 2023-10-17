@@ -1,0 +1,84 @@
+.al-dl-docs-list-float{
+	width:73%;
+	float:left;
+}
+.al-dl-docs-list .al-dl-doc-section-name{
+	font-size:19px;
+	padding-bottom:9px;
+	margin-top:19px;
+}
+.al-dl-docs-list .al-dl-docs-item{
+	padding:15px 100px 18px 76px;
+	margin:0px;
+	font-size:12px;
+}
+.al-dl-doc-info-bottom{
+	padding:0px;
+	margin:6px 0px 0px 0px;
+}
+.al-dl-doc-info-bottom .al-dl-load:hover{
+	text-decoration:none;
+}
+.al-dl-docs-list .al-dl-docs-item .al-dl-doc-icon{
+	float:left;
+	position:relative;
+	z-index:1;
+	padding-top:1px;
+	margin-left:-57px;
+}
+.al-dl-docs-list .al-dl-docs-item .docs-date-time{
+	color:#a8a8a8;
+	font-size:12px;
+	margin-bottom:3px;
+}
+.al-dl-docs-list .al-dl-docs-item .al-dl-doc-name
+{
+	padding:0px;
+	margin:0px 0px 3px 0px;
+	font-size:13px;
+	font-weight:bold;
+}
+.al-dl-docs-list .al-dl-docs-item .al-dl-doc-name a{
+	text-decoration:underline;
+}
+.al-dl-docs-list .al-dl-docs-item .al-dl-doc-name a:hover{
+	text-decoration:none;
+}
+.al-dl-docs-list .al-dl-clear{
+	padding:0px;
+	margin:0px;
+	clear:both;
+	height:1px;
+	overflow:hidden;
+}
+.al-dl-sect-list{
+	float:right;
+	width:25%;
+	font-size:12px;
+	background-color:#fff;
+}
+.al-dl-sect-list .al-dl-sec-title{
+	font-weight:bold;
+	font-size:14px;
+	padding:10px 0px 16px 16px;
+}
+.al-dl-sect-list ul{
+	padding:0px;
+	margin:0px;
+	list-style:none!important;
+}
+.al-dl-sect-list ul li{
+	padding:14px 0px 17px 30px;
+	background:url(images/arr_bullet_sec.png) 17px 18px no-repeat;
+	margin:0px;
+	font-weight:bold;
+}
+.al-dl-sect-list ul li a:hover{
+	text-decoration:none;
+}
+.al-dl-sect-list ul li.al-dl-sect-sel{
+	background:url(images/arr_bullet_sec_sel.png) 17px 18px no-repeat;
+}
+.al-dl-sect-list a{
+	cursor:pointer;
+}

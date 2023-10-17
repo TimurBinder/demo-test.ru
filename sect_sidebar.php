@@ -1,0 +1,271 @@
+<p style="text-align: center;">
+ <a href="/catalog/"><img width="320" src="/upload/vb3.jpg" height="80"></a><br>
+</p>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:menu",
+	"sidebar",
+	Array(
+		"ALLOW_MULTI_SELECT" => "N",
+		"CHILD_MENU_TYPE" => "mainsub",
+		"COMPONENT_TEMPLATE" => "sidebar",
+		"DELAY" => "N",
+		"MAX_LEVEL" => "3",
+		"MENU_CACHE_GET_VARS" => array(),
+		"MENU_CACHE_TIME" => "3600",
+		"MENU_CACHE_TYPE" => "A",
+		"MENU_CACHE_USE_GROUPS" => "Y",
+		"ROOT_MENU_TYPE" => "mainsub",
+		"USE_EXT" => "Y"
+	)
+);?>
+<?php $APPLICATION->ShowViewContent('site_sidebar'); ?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"sidebar_buttons",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"COMPONENT_TEMPLATE" => "sidebar_buttons",
+		"EDIT_TEMPLATE" => "",
+		"IS_LINK_POPUP" => "Y",
+		"LINK_SIDE_WIDGET" => "/include/forms/ask/",
+		"NAME_SIDE_SVG" => "message",
+		"PATH" => "/include/sidebar/button_inc1.php"
+	),
+false,
+Array(
+	'ACTIVE_COMPONENT' => 'Y'
+)
+);?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"sidebar_buttons",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"COMPONENT_TEMPLATE" => "sidebar_buttons",
+		"EDIT_TEMPLATE" => "",
+		"IS_LINK_POPUP" => "N",
+		"LINK_SIDE_WIDGET" => "/contacts/",
+		"NAME_SIDE_SVG" => "location",
+		"PATH" => "/include/sidebar/button_inc2.php"
+	)
+);?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"sidebar_buttons",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"COMPONENT_TEMPLATE" => "sidebar_buttons",
+		"EDIT_TEMPLATE" => "",
+		"IS_LINK_POPUP" => "Y",
+		"LINK_SIDE_WIDGET" => "/include/forms/feedback/",
+		"NAME_SIDE_SVG" => "pencil",
+		"PATH" => "/include/sidebar/button_inc3.php"
+	)
+);?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"sidebar_buttons",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"COMPONENT_TEMPLATE" => "sidebar_buttons",
+		"EDIT_TEMPLATE" => "",
+		"IS_LINK_POPUP" => "Y",
+		"LINK_SIDE_WIDGET" => "/include/forms/recall/",
+		"NAME_SIDE_SVG" => "device-mobile",
+		"PATH" => "/include/sidebar/button_inc4.php"
+	)
+);?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:news.list",
+	"sidebar_information",
+	Array(
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"ADD_CONTAINER" => "Y",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "N",
+		"ASK_LINK" => "/include/forms/ask_staff/?element_id=#ELEMENT_ID#",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "36000000",
+		"CACHE_TYPE" => "A",
+		"CATALOG_IBLOCK_ID" => "",
+		"CHECK_DATES" => "Y",
+		"COLS_IN_ROW" => "4",
+		"COL_LG" => "6",
+		"COL_MD" => "6",
+		"COL_SM" => "6",
+		"COL_XS" => "12",
+		"DETAIL_URL" => "",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"DISPLAY_DATE" => "Y",
+		"DISPLAY_NAME" => "Y",
+		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PREVIEW_TEXT" => "Y",
+		"DISPLAY_TOP_PAGER" => "N",
+		"FIELD_CODE" => array(0=>"",1=>"",),
+		"FILTER_NAME" => "",
+		"GROUP_BY_ABC" => "N",
+		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+		"IBLOCK_ID" => "26",
+		"IBLOCK_TYPE" => "helpinfo",
+		"ICON_BODYMOVIN_PROP" => "-",
+		"ICON_PROP" => "-",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+		"INCLUDE_SUBSECTIONS" => "Y",
+		"LINKED_PROP" => "LINK",
+		"LINK_PROP" => "-",
+		"MARKER_COLOR_PROPERTY" => "-",
+		"MARKER_TEXT_PROPERTY" => "-",
+		"MESSAGE_404" => "",
+		"NEWS_COUNT" => "1",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TITLE" => "",
+		"PARENT_SECTION" => "",
+		"PARENT_SECTION_CODE" => "",
+		"PREVIEW_TRUNCATE_LEN" => "",
+		"PROPERTY_CODE" => array(0=>"",1=>"LINK",2=>"",),
+		"PROP_CONTACTS" => "-",
+		"PROP_DESCRIPTION" => "-",
+		"PROP_IS_ASK" => "-",
+		"PROP_NAME" => "-",
+		"PROP_POSITION" => "-",
+		"PROP_SOCIAL" => "-",
+		"RSAUTOCITY_LINK_DOYOUKNOW" => "-",
+		"RS_BACKGROUND_PROPERTY" => "-",
+		"RS_BANNER_HEIGHT" => "",
+		"RS_BANNER_IS_AUTOPLAY" => "N",
+		"RS_BANNER_TYPE" => "wide",
+		"RS_BLANK" => "-",
+		"RS_BUTTON_TEXT_PROPERTY" => "-",
+		"RS_DESC_PROPERTY" => "-",
+		"RS_IMG_PROPERTY" => "-",
+		"RS_LINK" => "-",
+		"RS_LINK_PROPERTY" => "-",
+		"RS_PRICE_PROPERTY" => "-",
+		"RS_PROPERTY_LINK" => "-",
+		"RS_PROP_MORE_PHOTO" => "-",
+		"RS_SHOW_TITLE" => "Y",
+		"RS_SIDEBANNERS" => "none",
+		"RS_SIDEBANNERS_IBLOCK_ID" => "3",
+		"RS_SIDEBANNERS_IBLOCK_TYPE" => "catalog",
+		"RS_TITLE" => "",
+		"RS_TITLE_PROPERTY" => "-",
+		"SALE_DATE_PROPERTY" => "-",
+		"SECTION_PAGE_MORE_TEXT" => "",
+		"SECTION_PAGE_MORE_URL" => "",
+		"SECTION_PAGE_URL" => "",
+		"SET_BROWSER_TITLE" => "N",
+		"SET_LAST_MODIFIED" => "N",
+		"SET_META_DESCRIPTION" => "N",
+		"SET_META_KEYWORDS" => "N",
+		"SET_STATUS_404" => "N",
+		"SET_TITLE" => "N",
+		"SHOW_404" => "N",
+		"SHOW_DESCRIPTION" => "Y",
+		"SHOW_PARENT" => "Y",
+		"SHOW_PARENT_NAME" => "N",
+		"SHOW_TITLE" => "Y",
+		"SORT_BY1" => "RAND",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER1" => "DESC",
+		"SORT_ORDER2" => "ASC",
+		"STRICT_SECTION_CHECK" => "N",
+		"TARGET_PROP" => "-",
+		"USE_OWL" => "N"
+	),
+false,
+Array(
+	'ACTIVE_COMPONENT' => 'N'
+)
+);?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"sidebar_map",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"COMPONENT_TEMPLATE" => "sidebar_map",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/sidebar/map.php",
+		"RS_LINK" => "/Infrastructure_and_location/"
+	)
+);?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:news.list",
+	"sidebar_banners",
+	Array(
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"ADD_SECTIONS_CHAIN" => "N",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "N",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "36000000",
+		"CACHE_TYPE" => "A",
+		"CHECK_DATES" => "Y",
+		"COMPONENT_TEMPLATE" => "sidebar_banners",
+		"DETAIL_URL" => "",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"DISPLAY_DATE" => "Y",
+		"DISPLAY_NAME" => "Y",
+		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PREVIEW_TEXT" => "Y",
+		"DISPLAY_TOP_PAGER" => "N",
+		"FIELD_CODE" => array(0=>"",1=>"",),
+		"FILTER_NAME" => "",
+		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+		"IBLOCK_ID" => "2",
+		"IBLOCK_TYPE" => "banners",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "N",
+		"INCLUDE_SUBSECTIONS" => "Y",
+		"MESSAGE_404" => "",
+		"NEWS_COUNT" => "1",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TITLE" => "Новости",
+		"PARENT_SECTION" => "",
+		"PARENT_SECTION_CODE" => "",
+		"PREVIEW_TRUNCATE_LEN" => "",
+		"PROPERTY_CODE" => array(0=>"LINK",1=>"TARGET",2=>"",),
+		"RS_BLANK" => "TARGET",
+		"RS_LINK" => "LINK",
+		"SET_BROWSER_TITLE" => "N",
+		"SET_LAST_MODIFIED" => "N",
+		"SET_META_DESCRIPTION" => "N",
+		"SET_META_KEYWORDS" => "N",
+		"SET_STATUS_404" => "N",
+		"SET_TITLE" => "N",
+		"SHOW_404" => "N",
+		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER1" => "DESC",
+		"SORT_ORDER2" => "ASC",
+		"STRICT_SECTION_CHECK" => "N"
+	)
+);?>
+<?$APPLICATION->IncludeComponent(
+	"bitrix:main.include",
+	"sidebar_note",
+	Array(
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => "/include/sidebar/note.php"
+	)
+);?>

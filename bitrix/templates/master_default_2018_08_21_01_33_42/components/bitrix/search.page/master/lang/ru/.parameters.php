@@ -1,0 +1,21 @@
+<?php
+$MESS["IBLOCK_TYPE"] = "Тип инфоблока";
+$MESS["IBLOCK_IBLOCK"] = "Инфоблок";
+$MESS['RS.IS_USE_CART'] = 'Использовать функционал корзины';
+$MESS['RS.PRICE_PROP'] = 'Цена (свойство ИБ)';
+$MESS['RS.DISCOUNT_PROP'] = 'Скидка (свойство ИБ)';
+$MESS['RS.CURRENCY_PROP'] = 'Валюта (свойство ИБ)';
+$MESS["CP_BCS_TPL_MESS_BTN_BUY"] = "Текст кнопки \"Купить\"";
+$MESS["CP_BCS_TPL_MESS_BTN_ADD_TO_BASKET"] = "Текст кнопки \"Добавить в корзину\"";
+$MESS["CP_BCS_TPL_MESS_BTN_DETAIL"] = "Текст кнопки \"Подробнее\"";
+$MESS["CP_BCS_TPL_MESS_BTN_SUBSCRIBE"] = "Текст кнопки \"Уведомить о поступлении\"";
+$MESS["CP_BCS_TPL_MESS_BTN_COMPARE"] = "Текст кнопки \"Сравнить\"";
+$MESS["CP_BCS_TPL_MESS_NOT_AVAILABLE"] = "Сообщение об отсутствии товара";
+$MESS["CP_BCS_TPL_MESS_BTN_LAZY_LOAD"] = "Текст кнопки \"Показать ещё\"";
+$MESS["CP_BCS_TPL_MESS_BTN_BUY_DEFAULT"] = "Купить";
+$MESS["CP_BCS_TPL_MESS_BTN_ADD_TO_BASKET_DEFAULT"] = "В корзину";
+$MESS["CP_BCS_TPL_MESS_BTN_DETAIL_DEFAULT"] = "Подробнее";
+$MESS["CP_BCS_TPL_MESS_BTN_SUBSCRIBE_DEFAULT"] = "Подписаться";
+$MESS["CP_BCS_TPL_MESS_BTN_COMPARE_DEFAULT"] = "Сравнить";
+$MESS["CP_BCS_TPL_MESS_NOT_AVAILABLE_DEFAULT"] = "Нет в наличии";
+$MESS["CP_BCS_TPL_MESS_BTN_LAZY_LOAD_DEFAULT"] = "Показать ещё";

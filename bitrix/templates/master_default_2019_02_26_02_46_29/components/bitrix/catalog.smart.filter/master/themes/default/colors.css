@@ -1,0 +1,14 @@
+.bx-filter.bx-default .bx-filter-parameters-box-title {
+  background-color: #7aa104;
+  color: #fff; }
+  .bx-filter.bx-default .bx-filter-parameters-box-title:hover {
+    background-color: #546f03; }
+
+.bx-filter.bx-default .bx-filter-parameters-box-hint .hint {
+  border-color: #fff;
+  color: #fff; }
+
+.bx-filter.bx-default .bx-filter-block {
+  background-color: #f7f7f8; }
+
+/*# sourceMappingURL=colors.css.map */

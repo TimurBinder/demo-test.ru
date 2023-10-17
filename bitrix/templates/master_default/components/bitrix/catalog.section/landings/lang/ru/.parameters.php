@@ -1,0 +1,20 @@
+<?php
+$MESS['RS.LANDING_SECTION.IBLOCK_ITEM'] = "Инфоблок с товаром для лендинга";
+$MESS['RS.LANDING_SECTION.IBLOCK_ITEM_ID'] = "ID товара для лендинга";
+$MESS['RS.LANDING_SECTION.IBLOCK_ITEM_PROP'] = "Свойства товара для вывода";
+$MESS['RS.MASTER.PRICE_PROP'] = "Цена (свойство ИБ)";
+$MESS['RS.MASTER.DISCOUNT_PROP'] = 'Скидка (свойство ИБ)';
+$MESS['RS.MASTER.CURRENCY_PROP'] = 'Валюта (свойство ИБ)';
+$MESS['RS.MASTER.PRICE_DECIMALS'] = 'Количество знаков после запятой';
+$MESS["RS.MASTER.ADD_PICT_PROP"] = "Свойство с картинками для галереи";
+$MESS["RS.LANDING_SECTION.IBLOCK_PROPERTY"] = "Свойства раздела";
+$MESS["RS.LANDING_SECTION.IBLOCK_PROPERTY"] = "Свойства раздела";
+$MESS['RS.MASTER.ASK_QUESTION'] = 'Задать вопрос';
+$MESS['RS.MASTER.MESS_BTN_ASK_QUESTION'] = "Текст кнопки \"Задать вопрос\"";
+$MESS['RS.MASTER.LINK_BTN_ASK'] = "Ссылка кнопки \"Задать вопрос\"";
+$MESS["ADD_TO_BASKET_ACTION_ADD"] = "добавления в корзину";
+$MESS['RS.MASTER.MESS_BTN_ASK_QUESTION_DEFAULT'] = 'Задать вопрос';
+$MESS["CP_BC_TPL_DETAIL_ADD_TO_BASKET_ACTION_PRIMARY"] = "Выделять кнопки добавления в корзину и покупки";
+$MESS["CP_BC_TPL_DETAIL_ADD_TO_BASKET_ACTION"] = "Показывать кнопки добавления в корзину и покупки";
+$MESS["CP_BC_TPL_MESS_BTN_ADD_TO_BASKET"] = "Текст кнопки \"Добавить в корзину\"";
+$MESS["CP_BC_TPL_MESS_BTN_ADD_TO_BASKET_DEFAULT"] = "В корзину";

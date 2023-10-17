@@ -1,0 +1,1 @@
+<img src="/upload/img/logo-about-big.png">

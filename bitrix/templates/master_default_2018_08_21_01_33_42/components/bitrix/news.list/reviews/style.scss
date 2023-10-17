@@ -1,0 +1,154 @@
+@import '../../../../resources/styles/bootstrap-variables';
+@import '../../../../resources/styles/functions';
+
+.b-reviews {
+  padding: 0 ($grid-gutter-width / 2);
+
+  &__items {
+    max-width: 815px;
+    margin: auto;
+  }
+
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    transform: translateY(-30px);
+  }
+
+  .owl-dots .owl-dot {
+    border: 1px solid $gray-lighter;
+    margin: 4px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    background: #f7f7f8;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    margin: 3px;
+    background: transparent;
+  }
+
+  &__top {
+    margin: 0 -15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 15px;
+  }
+
+  &__new {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $screen-md-min) {
+
+  }
+}
+
+.b-review {
+  padding: 60px 0 30px 0;
+  text-align: center;
+  margin: auto;
+
+  &__face {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #e8e8e8;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    max-width: 140px;
+  }
+
+  &__img {
+    padding: 5px;
+    border-radius: 50%;
+    max-width: 100%;
+  }
+
+  &__message {
+    padding: 15px 0;
+  }
+
+  &__author {
+    padding: 15px 0;
+  }
+
+  &__author-name {
+    font-weight: bold;
+  }
+
+  &__author-job {
+    color: $brand-primary;
+    font-size: pxtoem(12px);
+    margin-top: 3px;
+  }
+
+  &--line {
+    text-align: left;
+    white-space: nowrap;
+    padding: 25px 0;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 -15px 25px -15px;
+
+    > * {
+      white-space: normal;
+    }
+  }
+
+  &--line &__face,
+  &--line &__content {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &--line &__face {
+    margin: 15px 0;
+    flex: 1 1;
+    border: 2px solid $brand-primary;
+    max-width: 50%;
+  }
+
+  &--line &__content {
+    flex: 1 1;
+  }
+
+  &--line &__author {
+    padding: 0;
+  }
+
+  &--line &__message,
+  &--line &__author-job {
+    color: $gray-max;
+  }
+
+  &--line &__message {
+    font-style: italic;
+  }
+
+  @media (min-width: $screen-xs-min) {
+    &--line {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &--line &__face {
+      max-width: 140px;
+      margin: 0;
+      margin-right: 45px;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    &--line &__face {
+      margin-left: 45px;
+    }
+  }
+
+}

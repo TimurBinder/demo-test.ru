@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001697465595';
+$dateexpire = '001697469195';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:1:{s:1:"-";a:28:{s:7:"address";s:149:"Месторасположение офиса: г. Южно-Сахалинск, ул. Комсомольская 271 А, корпус 1 "Rose-House".";s:14:"cian_file_path";s:19:"realtyfeed/cian.xml";s:15:"cian_first_name";s:0:"";s:8:"cian_inn";s:10:"6501162557";s:14:"cian_last_name";s:0:"";s:16:"cian_person_type";s:5:"legal";s:16:"cian_second_name";s:0:"";s:18:"common_description";s:171:"ЖК РозаTown: комфорт, стиль, природа! Уютные квартиры от застройщика. Успей забронировать мечту!";s:17:"consider_activity";s:1:"Y";s:5:"email";s:0:"";s:16:"house_109_floors";s:2:"10";s:16:"house_110_floors";s:2:"10";s:16:"house_111_floors";s:2:"12";s:16:"house_123_floors";s:2:"12";s:16:"house_128_floors";s:2:"16";s:9:"iblock_id";s:1:"3";s:5:"phone";s:10:"4242733333";s:17:"status_active_112";s:1:"Y";s:17:"status_active_113";s:1:"Y";s:17:"status_active_114";s:1:"N";s:22:"use_common_description";s:1:"Y";s:11:"xml_pr_area";s:3:"194";s:19:"xml_pr_floor_number";s:3:"191";s:19:"xml_pr_house_number";s:3:"192";s:13:"xml_pr_photos";s:2:"22";s:12:"xml_pr_price";s:2:"10";s:12:"xml_pr_rooms";s:2:"30";s:13:"xml_pr_status";s:3:"193";}}}';
+return true;
+?>

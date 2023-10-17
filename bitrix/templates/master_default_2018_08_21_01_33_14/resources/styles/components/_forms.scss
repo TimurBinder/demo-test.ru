@@ -1,0 +1,128 @@
+label {
+  font-size: $font-size-base;
+}
+
+.form-control {
+
+  box-shadow: none;
+
+  &:focus {
+    border-color: $input-border;
+    box-shadow: none;
+    background-color: #fff;
+  }
+
+  .has-error & {
+    box-shadow: none;
+    background: #ffdcdc;
+    color: $state-danger-text;
+  }
+  .has-error &:focus {
+    box-shadow: none;
+  }
+
+  .has-success & {
+    box-shadow: none;
+    border-color: $input-border;
+  }
+  .has-success &:focus {
+    border-color: $input-border;
+    box-shadow: none;
+    background-color: #fff;
+  }
+}
+
+.custom-checkbox {
+  position: absolute;
+  opacity: 0;
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+  }
+
+  & + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border: 1px solid $input-border;
+  }
+
+  &:checked + label:after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 9px;
+    background: $brand-primary;
+    width: 2px;
+    height: 2px;
+    transform: rotate(45deg);
+    box-shadow:
+      2px 0 0 $brand-primary,
+      4px 0 0 $brand-primary,
+      4px -2px 0 $brand-primary,
+      4px -4px 0 $brand-primary,
+      4px -6px 0 $brand-primary,
+      4px -8px 0 $brand-primary;
+  }
+
+}
+
+.custom-radio {
+  position: absolute;
+  opacity: 0;
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+  }
+
+  & + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border: 2px solid $input-border;
+    border-radius: 50%;
+    transition: .3s ease;
+  }
+
+  & + label:after {
+    transition: .3s;
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    background: $brand-primary;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: scale(0);
+  }
+
+  &:checked + label:before {
+    border-color: $brand-primary;
+  }
+
+  &:checked + label:after {
+    transform: scale(1);
+  }
+}
+
+.form-group {
+
+  .calendar-icon {
+    float: right;
+  }
+}

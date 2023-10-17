@@ -1,0 +1,33 @@
+.table-basket {}
+
+  .table-basket th.name {
+    text-align: center;
+    width: 100%;
+  }
+  .table-basket td.name {
+    width: 100%;
+  }
+  .table-basket th.quantity,
+  .table-basket td.quantity {
+    min-width: 178px;
+    vertical-align: middle;
+  }
+  .table-basket .price,
+  .table-basket .fullprice {
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+
+    .table-basket .remove-btn {
+      vertical-align: middle;
+    }
+
+  .table-basket .image {
+    width: 80px;
+    max-height: 80px;
+    float: left;
+  }
+
+  .table-basket .properties {
+    margin-top: 10px;
+  }

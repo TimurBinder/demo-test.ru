@@ -1,0 +1,82 @@
+@import '../../../../resources/styles/bootstrap-variables';
+
+.b-ask-question {
+  margin: 2.75rem 0;
+  position: relative;
+  overflow: hidden;
+
+
+  &__container {
+    text-align: center;
+    padding: 0 $grid-gutter-width / 2;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__content h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  &__mark {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: $brand-primary;
+  }
+
+  &__content {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 30px;
+    max-width: 380px;
+  }
+
+  &--wide {
+    padding: 35px 0 45px 0;
+    background: $brand-primary;
+    color: #fff;
+  }
+
+  &--wide &__mark {
+    color: #fff;
+  }
+
+  &--wide &__btns .btn-primary {
+    border-color: #fff;
+    &:hover,
+    &:active {
+      border-color: darken($brand-primary, 10%);
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    &--wide &__mark {
+      font-size: 45px;
+    }
+    &--wide &__mark,
+    &--wide &__btns {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &--wide &__content {
+      text-align: left;
+    }
+
+    &--wide &__content,
+    &--wide &__mark,
+    &--wide &__btns {
+      margin: 0 15px;
+    }
+
+    &--wide &__btns {
+      margin: 25px 15px 0 15px;
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    &--wide:after {
+      display: block;
+    }
+  }
+}

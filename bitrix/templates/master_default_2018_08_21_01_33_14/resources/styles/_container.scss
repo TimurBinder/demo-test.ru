@@ -1,0 +1,41 @@
+@mixin container-width($width) {
+  @media (min-width: $screen-lg-min) {
+    .container,
+    .l-page.has-sidebar,
+    .l-page.has-container,
+    .l-page__title,
+    .l-head1 .b-head-search,
+    .l-head2__menu,
+    .l-head2 .b-head-search,
+    .l-head3__menu-search,
+    .b-fly-head__container,
+    .l-head1--background .l-head1__menu,
+    .l-head1--shade-dark .l-head1__menu,
+    .l-head1--shade-light .l-head1__menu,
+    .l-head1--shade-colors .l-head1__menu {
+      width: 100%;
+    	max-width: $width;
+    }
+  }
+
+  .rs-banners-container.__center,
+  .l-footer--container,
+  .rs-banners-container.__wide .rs-banners_wrap {
+    width: $width - $grid-gutter-width;
+    max-width: 100%;
+  }
+}
+
+.cw_1280 {
+  @include container-width(1280px);
+}
+.cw_1366 {
+  @include container-width(1366px);
+}
+.cw_1600 {
+  @include container-width(1600px);
+}
+
+.rstuning__option:nth-child(4) {
+  z-index: 999;
+}

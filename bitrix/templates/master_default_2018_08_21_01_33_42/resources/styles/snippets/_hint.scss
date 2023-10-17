@@ -1,0 +1,20 @@
+%hint {
+  //background: $skin0_bg;
+  border: 1px solid $border-color;
+  border-radius: 50%;
+  color: $gray-max;
+  display: inline-block;
+  font-style: normal;
+  height: $line-height-computed;
+  line-height: $line-height-computed;
+  margin: -2px auto;
+  text-align: center;
+  vertical-align: middle;
+  width: $line-height-computed;
+  
+  &:hover {
+    background-color: #b01e21;
+    border-color: #b01e21;
+    color: #fff;
+  }
+}

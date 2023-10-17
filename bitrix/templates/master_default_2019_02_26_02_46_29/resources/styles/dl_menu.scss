@@ -1,0 +1,147 @@
+@import 'bootstrap-variables';
+
+.b-dl-menu {
+  &,
+  &__subitems {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  }
+
+  &__item {
+    margin: 0;
+  }
+
+  &__subitems {
+    position: absolute;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &.is-view,
+  &__subitems.is-view {
+    border: 0;
+  }
+
+  &.is-view > &__item,
+  &.is-view > &__item.is-open > &__link,
+  &__subitems.is-view > &__item,
+  &__subitems.is-view > &__item.is-open > &__link {
+    display: none;
+  }
+
+  &.is-view > &__item.is-open,
+  &__subitems.is-view > &__item.is-open {
+    display: block;
+  }
+
+
+  &__item.is-open > &__subitems {
+    display: block;
+    z-index: 2;
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+    outline: none;
+    backface-visibility: hidden;
+    color: #333;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+      background-color: $brand-primary;
+      color: #fff;
+    }
+  }
+
+  &__item:last-child > &__link {
+    border-bottom: 5px solid $brand-primary;
+  }
+
+  &__item:first-child > &__link {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  &__item.has-subitems > &__link:after {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    content: "\f105";
+    position: absolute;
+    font-weight: 400;
+    display: inline-block;
+    font-family: FontAwesome;
+  }
+
+  &__item--main > &__link {
+    font-weight: 600;
+    background-color: #f7f7f7;
+    color: $text-color;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $brand-primary;
+      color: #fff;
+    }
+  }
+
+
+  .has-subitems &__subitems {
+    display: none;
+  }
+
+  &__item--back &__link:after {
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    left: 15px;
+    content: "\f105";
+    position: absolute;
+    font-weight: 400;
+    display: inline-block;
+    font-family: FontAwesome;
+  }
+
+  &__item--back &__link {
+    padding-left: 30px;
+  }
+
+  &.animate-in,
+  &__subitems.animate-in {
+    animation: MasterDlMenuAnimationIn 0.3s ease-in-out;
+  }
+  &.animate-out,
+  &__subitems.animate-out {
+    animation: MasterDlMenuAnimationOut 0.3s ease-in-out;
+  }
+}
+
+@keyframes MasterDlMenuAnimationIn {
+  0% {
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes MasterDlMenuAnimationOut {
+  0% {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+}

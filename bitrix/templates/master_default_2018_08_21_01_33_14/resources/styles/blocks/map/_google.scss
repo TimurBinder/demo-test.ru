@@ -1,0 +1,24 @@
+.b-google-map {
+  margin-top: 60px;
+
+  &__view {
+    position: relative;
+  }
+
+  &__view:before,
+  &__view:after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    z-index: 999;
+  }
+  &__view:before {
+    box-shadow: inset 0 3px 5px #ccc;
+    top: 0;
+  }
+  &__view:after {
+    box-shadow: inset 0 -3px 5px #ccc;
+    bottom: 0;
+  }
+}

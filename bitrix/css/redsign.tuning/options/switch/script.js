@@ -1,0 +1,1 @@
+$(document).ready(function(){$(document).on("change","input",function(){$input=$(this),$input.is(":checked")?$input.closest(".switch").addClass("active"):$input.closest(".switch").removeClass("active")})});

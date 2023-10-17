@@ -1,0 +1,69 @@
+$color-base: $brand-primary;
+
+@import 'vendor/owl_carousel/core';
+@import 'vendor/owl_carousel/animate';
+@import 'vendor/owl_carousel/autoheight';
+@import 'vendor/owl_carousel/lazyload';
+@import 'vendor/owl_carousel/video';
+
+@import 'vendor/owl_carousel/theme.default';
+
+.owl-carousel.owl-theme {
+  
+  .owl-nav {
+    bottom: 0;
+    height: 0.1px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all, 0.2s, ease-in-out 0s;
+    width: 100%;
+    
+    .owl-prev,
+    .owl-next {
+      background-color: $gray-lighter;
+      border-radius: 50%;
+      color: transparent;
+      margin: auto;
+      opacity: 0;
+      padding: 0;
+      position: absolute;
+      top: -26px;
+      
+      &:hover {
+        color: transparent;
+      }
+    }
+      
+    .owl-prev {
+      left: 10px;
+    }
+    
+    .owl-next {
+      right: 10px;
+    }
+
+    .icon-svg {
+      display: block;
+      fill: $gray;
+      font-size: 52px;
+    }
+  }
+  
+  &:hover {
+    .owl-nav {
+
+      .owl-prev,
+      .owl-next {
+        opacity: 0.3;
+        
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}
+

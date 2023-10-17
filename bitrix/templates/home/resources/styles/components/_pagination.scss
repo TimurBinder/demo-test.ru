@@ -1,0 +1,39 @@
+.pagination {
+  
+  & > li {
+    
+    & > a,
+    & > span {
+      border-width: 2px;
+      margin-left: -2px;
+    }
+
+    &.pagination__prev,
+    &.pagination__next {
+      > a {
+        color: $pagination-active-color;
+        background-color: $pagination-active-bg;
+        border-color: $pagination-active-border;
+      }
+      
+      .icon-svg {
+        font-size: 30px;
+        margin: -10px -7px;
+      }
+    }
+    
+    &.pagination__prev {
+      > a {
+        margin-right: $line-height-computed/2;
+      }
+    }
+    
+    &.pagination__next {
+      > a {
+        margin-left: $line-height-computed/2;
+      }
+    }
+
+  }
+  
+}

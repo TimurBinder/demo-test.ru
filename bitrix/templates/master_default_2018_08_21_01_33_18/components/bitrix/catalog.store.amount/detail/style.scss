@@ -1,0 +1,46 @@
+@import '../../../../resources/styles/bootstrap-variables';
+@import '../../../../resources/styles/functions';
+@import '../../../../resources/styles/snippets';
+
+.stock {
+  margin-bottom: pxtoem($line-height-computed*1.5);
+
+  &__head {
+    @extend %clearfix;
+    @extend %list-justify;
+    
+    display: block;
+    margin-bottom: pxtoem($line-height-computed/2);
+  }
+
+  &__name {
+    @extend %list-justify__term;
+
+    font-weight: bold;
+  }
+
+  &__balance {
+    @extend %list-justify__data;
+  }
+  
+  &__balance,
+  & &__val {
+    color: #54a60a;
+  }
+  
+  &__icon {
+    color: #8c8b89;
+    pointer-events: none;
+  }
+  
+  &.is-empty &__balance,
+  &.is-empty &__val,
+  &.is-empty &__icon {
+    color: #b01e21;
+  }
+}
+
+.bx_storege > ul {
+  list-style: none;
+  padding-left: 0;
+}

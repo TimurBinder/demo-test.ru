@@ -1,0 +1,27 @@
+%color-item {
+  background: $body-bg;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  color: $text-color;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  padding: 2px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: border .3s ease, color .3s ease;
+  vertical-align: middle;
+  
+  &__icon {
+    background-size: cover;
+    border: 1px solid #d7dbdd;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: $line-height-computed*1.6;
+    width: $line-height-computed*1.6;
+    height: $line-height-computed*1.6;
+    vertical-align: middle;
+    
+  }
+}

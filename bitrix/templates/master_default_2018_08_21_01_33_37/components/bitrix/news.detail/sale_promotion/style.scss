@@ -1,0 +1,26 @@
+@import '../../../../resources/styles/bootstrap-variables';
+@import '../master/style.scss';
+
+.b-sale-promotion-tag {
+    margin: 10px 0;
+
+    &__marker {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 5px 30px 5px 10px;
+      z-index: 400;
+      color: #fff;
+      padding: 2px 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 10px;
+    }
+
+
+    &__date {
+      vertical-align: middle;
+      display: inline-block;
+      font-size: $font-size-small;
+    }
+}

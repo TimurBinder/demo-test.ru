@@ -1,0 +1,41 @@
+%deal-sticker {
+  display: block;
+  padding-left: $line-height-computed*1.5;
+  
+  &__body {
+    background: #fff5c8;
+    border-radius: $line-height-computed/4;
+    display: flex;
+    min-height: pxtoem($font-size-base*$line-height-base*2 + $line-height-computed/2*2); // 2 string + paddings
+    padding: pxtoem($line-height-computed/2) $line-height-computed*1.5 pxtoem($line-height-computed/2) 100px - $line-height-computed/2;
+    position: relative;
+  }
+  
+  &__name {
+    margin: auto 0;
+
+    &,
+    &:hover {
+      color: $gray-dark;
+      text-decoration: none;
+    }
+  }
+  
+  &__sticker {
+    background: #ff3600;
+    border-radius: $line-height-computed/4;
+    color: #fff;
+    display: inline;
+    font-size: 1rem;
+    font-weight: bold;
+    left: $line-height-computed*-1.5;
+    padding: pxtoem($font-size-small*$line-height-base/4) pxtoem($font-size-small*$line-height-base*0.68493);
+    position: absolute;
+    text-align: center;
+    // text-transform: uppercase;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: normal;
+    width: 100px;
+  }
+}

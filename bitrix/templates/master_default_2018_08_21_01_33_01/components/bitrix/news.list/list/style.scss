@@ -1,0 +1,20 @@
+@import '../../../../resources/styles/bootstrap-variables';
+@import '../../../../resources/styles/blocks/news/list';
+
+.b-newslist {
+  @include newslist;
+
+  margin-bottom: 30px;
+
+  &__title {
+    margin-top: 0;
+    color: $text-color;
+  }
+
+  &__title:hover,
+  &__title:focus,
+  &__title:active {
+    text-decoration: none;
+    color: $text-color;
+  }
+}

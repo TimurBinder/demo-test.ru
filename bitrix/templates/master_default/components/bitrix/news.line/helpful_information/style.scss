@@ -1,0 +1,6 @@
+@import '../../../../resources/styles/bootstrap-variables';
+@import '../../../../resources/styles/blocks/news/list';
+
+.b-helpful-info {
+  @include newslist;
+}

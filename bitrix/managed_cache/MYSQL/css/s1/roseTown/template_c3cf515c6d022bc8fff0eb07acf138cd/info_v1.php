@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/roseTown/src/static/css/style.css" => "169743813432913","/local/templates/roseTown/src/static/css/fonts.css" => "169683146211320",]; ?>

@@ -1,0 +1,47 @@
+.sorter {
+  @extend .clearfix;
+
+  &__item {
+    float: left;
+    margin-right: $line-height-computed*0.75;
+
+    .dropdown {
+      display: inline-block;
+    }
+
+    .btn-group .btn-default {
+      border-color: $input-border;
+    }
+
+    .btn-lg {
+      border-width: 1px;
+    }
+
+    &-views {
+      float: right;
+      margin: 0;
+
+      .btn-default {
+
+        &.active {
+          background-color: $brand-primary;
+          border-color: $brand-primary;
+          color: #fff;
+        }
+      }
+
+      .btn-lg {
+        font-size: 18px;
+        padding: 7.5px  11px;
+      }
+      
+      .icon {
+        margin: -3px 0 0;
+      }
+    }
+  }
+
+  &__name {
+    margin-right: $line-height-computed/4;
+  }
+}

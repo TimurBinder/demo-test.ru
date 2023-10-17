@@ -1,0 +1,21 @@
+@function pxtoem($pixels, $context: $font-size-base) {
+  @return $pixels / $context * 1em;
+}
+
+@mixin first($num) {
+  @if $num == 1 {
+    &:first-child {
+      @content;
+    }
+  } @else {
+    &:nth-child(-n + #{$num}) {
+      @content;
+    }
+  }
+}
+
+@mixin after-first($num) {
+  &:nth-child(n + #{$num + 1}) {
+    @content;
+  }
+}

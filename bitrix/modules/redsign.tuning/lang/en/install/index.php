@@ -1,0 +1,7 @@
+<?
+$MESS["RS_TUNING_INSTALL_NAME"] = "Widget";
+$MESS["RS_TUNING_INSTALL_DESCRIPTION"] = "";
+$MESS["RS_TUNING_INSTALL_TITLE"] = "Module Installation";
+$MESS["RS_TUNING_UNINSTALL_TITLE"] = "Module Uninstallation";
+$MESS["RS_TUNING_SPER_PARTNER"] = "ALFA Systems";
+?>

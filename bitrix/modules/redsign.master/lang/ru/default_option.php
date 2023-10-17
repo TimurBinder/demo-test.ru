@@ -1,0 +1,2 @@
+<?php
+$MESS['RS.MASTER_HEAD_SETTINGS_ASK_BUTTON_TEXT_DEFAULT'] = 'Задать вопрос';

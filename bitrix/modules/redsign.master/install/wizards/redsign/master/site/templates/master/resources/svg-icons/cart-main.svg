@@ -1,0 +1,12 @@
+<svg id="cart-main" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+<defs>
+    <style>
+      .cls-cart-main {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-cart-main" d="M0,0H3L3.75,4H16l-3,8H4L2,1H0M4,5H14.469l-2.156,6H4.938Z"/>
+  <path class="cls-cart-main" d="M5.5,13A1.5,1.5,0,1,1,4,14.5,1.5,1.5,0,0,1,5.5,13Zm0,1a0.5,0.5,0,1,1-.5.5A0.5,0.5,0,0,1,5.5,14Z"/>
+  <path class="cls-cart-main" d="M11.5,13A1.5,1.5,0,1,1,10,14.5,1.5,1.5,0,0,1,11.5,13Zm0,1a0.5,0.5,0,1,1-.5.5A0.5,0.5,0,0,1,11.5,14Z"/>
+</svg>

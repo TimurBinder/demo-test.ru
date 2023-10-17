@@ -1,0 +1,33 @@
+@import '../header/helpers';
+
+.b-foot-socials {
+  margin: 5px 0 20px  0;
+  display: block;
+
+  &__title {
+    font-weight: bold;
+    margin: 5px 0;
+  }
+
+  &__icon {
+    @include master-icon--full;
+    @include master-icon--hover();
+    background: transparent;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin-right: 6px;
+    padding-top: 6px;
+    color: #fff;
+  }
+
+  &__icon:before {
+    background: transparent;
+  }
+
+  &__icon:hover:before {
+    background: rgba(0, 0, 0, 0.35);
+  }
+
+}

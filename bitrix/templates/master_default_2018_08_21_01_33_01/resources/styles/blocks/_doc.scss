@@ -1,0 +1,82 @@
+.doc {
+  height: $line-height-computed*3;
+  margin-bottom: $line-height-computed;
+
+  &__left {
+    @extend .media-left;
+  }
+  
+  &__body {
+    @extend .media-body;
+  }
+  
+  &__name {
+    @extend .text_fade;
+    
+    color: $text-color;
+    max-height: $line-height-computed*2;
+    text-decoration: none;
+    
+    &:after {
+      top: $line-height-computed;
+    }
+  }
+  
+  &__type {
+    @extend .vcenter;
+
+    bottom: 0;
+    color: $text-color;
+    font-size: $font-size-base;
+    font-weight: bold;
+    left: 0;
+    max-height: 100%;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+    top: 17%;
+    white-space: nowrap;
+    
+    > span {
+      @extend .vcenter__in;
+    }
+  }
+  
+  &__icon {
+    position: relative;
+    vertical-align: middle;
+
+
+    .icon-svg {
+      color: #bbc0c7;
+      display: block;
+      font-size: 46px;
+    }
+    
+    &.icon-doc .icon-svg {
+      color: #1c69aa;
+    }
+    
+    &.icon-xls .icon-svg {
+      color: #2ea86a;
+    }
+    
+    &.icon-pdf .icon-svg {
+      color: #c7482a;
+    }
+  }
+  
+  &__icon.icon-doc &__type,
+  &__icon.icon-xls &__type,
+  &__icon.icon-pdf &__type {
+    color: #fff;
+  }
+  
+  &__size {
+    color: $gray-max;
+    font-size: $font-size-h6;
+  }
+}

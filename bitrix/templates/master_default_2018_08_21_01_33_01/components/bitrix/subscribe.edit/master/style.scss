@@ -1,0 +1,31 @@
+@import '../../../../resources/styles/bootstrap-variables';
+
+.b-subscription {
+  .field-wrap {
+    min-height: 45px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-weight: 400;
+  }
+
+  &__btns {
+    margin-top: 15px;
+  }
+
+  &__padleft {
+    margin-top: 12px;
+    padding-left: 30px;
+  }
+
+  &__rubric {
+    margin-bottom: 20px;
+  }
+
+  .required {
+    color: $brand-danger;
+    font-weight: 400;
+  }
+}

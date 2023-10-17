@@ -1,0 +1,15 @@
+@import '../../../../resources/styles/bootstrap-variables';
+@import '../../../../resources/styles/snippets/file';
+
+.l-files-list {
+  margin-bottom: 35px;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.b-file {
+  @include file-block;
+}

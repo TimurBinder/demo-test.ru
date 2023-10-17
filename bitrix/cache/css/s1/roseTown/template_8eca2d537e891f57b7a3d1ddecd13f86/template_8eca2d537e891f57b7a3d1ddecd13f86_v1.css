@@ -1,0 +1,2247 @@
+
+
+/* Start:/local/templates/roseTown/src/static/css/style.css?169746060733074*/
+:root {
+    --on-sale-color: #98cf50;
+    --on-sale-selected-color: #6ea822;
+    --reserve-color: #fbb849;
+    --reserve-selected-color: #ff9d00;
+    --booking-color: #f4325f;
+    --booking-selected-color: #ff003c;
+    --sold-color: #f4f6fb;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, hr, input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Gilroy', sans-serif;
+    vertical-align: baseline; 
+}
+
+header * {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: 600;
+    color: #2dccff;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+    min-width: 12px;
+}
+
+h4 div.mt-2 {
+    min-width: 12px;
+}
+
+h3, h4 {
+    color: #424242;
+    font-weight: 500;
+}
+
+figcaption {
+    color: #9d9d9d;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+figure div {
+    color: #424242;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+[class*="bx_incl_area"] {
+    min-width: 12px;
+}
+
+.arrow {
+    cursor: pointer;
+    user-select: none;
+}
+
+.circle {
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+}
+
+.green {
+    background-color: #98cf50;
+}
+
+.pink {
+    background-color: #f4325f;
+}
+
+.slider-progress {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.slider-progress .score {
+    font-weight: 500;
+    font-size: 28px;
+    color: #9d9d9d;
+}
+
+.select {
+    font-size: 14px;
+    min-width: 60px;
+    padding: 5px 20px;
+    display: flex;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.select, .select-values {
+    background-color: #f4f6fb;
+    color: #424242;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.select-values {
+    display: flex;
+    transform: scaleY(0);
+    transform-origin: 50% 0%;
+    transition-duration: 500ms;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 0 0 15px 15px;
+    width: 80px;
+    top: 100%;
+    z-index: 5;
+
+}
+
+.select-values.open {
+    transform: scaleY(1);
+}
+
+.select-values option {
+    width: 100%;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.select-values option:hover {
+    background-color: #c8cddb;
+    color: #fff;
+}
+
+.select.selected, .select:hover, .select select:hover {
+    background-color: #c8cddb;
+    color: #fff;
+}
+
+.select input, .select select, .select textarea {
+    outline: none;
+    border: none;
+}
+
+.select input[type="radio"] {
+    display: none;
+}
+
+.select select {
+    display: none;
+}
+
+.select.extremum {
+    cursor: auto;
+}
+
+.extremum input {
+    background-color: transparent;
+    margin-left: 5px;
+}
+
+.select.extremum:hover {
+    background-color: #f4f6fb;
+    color: #424242;
+}
+
+.select .range {
+    align-items: center;
+    width: 90%;
+    height: 3px;
+    background-color: transparent;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+}
+
+.select .range div {
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    position: absolute;
+    top: -4px;
+    cursor: pointer;
+}
+
+.progress {
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+}
+
+.progress div {
+    height: 4px;
+    background-color: #9d9d9d;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: -1px;
+}
+
+.range input[type="range"] {
+    background: none;
+    accent-color: #9d9d9d;
+    width: 100%;
+    top: -5px;
+    margin: 0;
+    position: absolute;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    pointer-events: none;
+}
+
+.range input[type="range"]::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 2px;
+    z-index: 5;
+    background-color: #9d9d9d;
+    border-radius: 100%;
+    -webkit-appearance: none;
+    pointer-events: auto;
+}
+
+.range input[type="range"]::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 2px;
+    z-index: 5;
+    background-color: #9d9d9d;
+    border-radius: 100%;
+    -moz-appearance: none;
+    pointer-events: auto;
+}
+
+.range input[type="range"]:hover {
+    accent-color: #9d9d9d;
+}
+
+.range-start {
+    left: 0;
+}
+
+.range-end {
+    right: 0;
+}
+
+/* Первый экран */
+
+.first-screen {
+    height: calc(100vw / 1.777);
+}
+
+.background img {
+    width: 100%;
+}
+
+.burger {
+    width: 28px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.burger hr {
+    border: none;
+    height: 2px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.burger hr:not(:first-child) {
+    margin-top: 7px;
+}
+
+.cross {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.cross hr {
+    width: 100%;
+    height: 3px;
+    border: none;
+    border-radius: 5px;
+    background: #3B485D;
+    opacity: 1;
+}
+
+.cross hr:first-child {
+    transform: rotate(45deg);
+}
+
+.cross hr:last-child {
+    transform: rotate(-45deg) translate(9px, -9px);
+}
+
+.burger-menu {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    border-radius: 0 0 15px 0;
+    z-index: 7;
+}
+
+.burger-menu > .bg {
+    min-width: 20px;
+    min-height: 20px;
+    width: 40%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.burger-menu > .bg img {
+    position: absolute;
+    right: -20px;
+    bottom: -40px;
+}
+
+.burger-menu nav a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3B485D;
+    cursor: pointer;
+}
+
+.burger-menu .nav-active {
+    position: absolute;
+    left: -40px;
+    transition-duration: 300ms;
+}
+
+.nav-active-1 {
+    top: 2%;
+}
+
+.nav-active-2 {
+    top: 19%;
+}
+
+.nav-active-3 {
+    top: 36%;
+}
+
+.nav-active-4 {
+    top: 54%;
+}
+
+.nav-active-5 {
+    top: 71%;
+}
+
+.nav-active-6 {
+    top: 88%;
+}
+
+.burger-menu .burger-logo {
+    width: 35%;
+}
+
+.burger-menu .phone a {
+    color: #36506B;
+    text-decoration: none;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo .name {
+    font-family: 'Bachnsrift', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.1;
+}
+
+.logo .desc {
+    font-size: 5px;
+    line-height: 1.751;
+    font-weight: 200;
+    white-space: nowrap;
+    letter-spacing: .1rem;
+}
+
+.button {
+    background-color: #f4325f;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+    transition-duration: 500ms;
+    border: none;
+}
+
+.button.option {
+    background-color: #2dccff;
+    width: 100%;
+    height: 50px;
+}
+
+.button.option:hover {
+    background-color: #00bfff;
+}
+
+.button:hover {
+    background-color: #fd003b;
+}
+
+.phone {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.menu a {
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.menu a:after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    width: 100%;
+    transform-origin: center center;
+    visibility: hidden;
+    transition-duration: 500ms;
+    animation: hoverLineOut 500ms ease-out;
+}
+
+.menu a:hover:after {
+    visibility: visible;
+    animation: hoverLineTo 500ms ease-out;
+}
+
+@keyframes hoverLineTo {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes hoverLineOut {
+    from {
+        transform: scaleX(1);
+    }
+    to {
+        transform: scaleX(0);
+    }
+}
+
+.target {
+    position: absolute;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 5px;
+    background-color: #2dccff;
+    border: 2px solid #2dccff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition-duration: 500ms;
+    z-index: 3;
+}
+
+.target-empty {
+    padding: 6px !important;
+    border: 4px solid #fff;
+    border-radius: 100% !important;
+}
+
+.target.selected {
+    background-color: #f4325f9f;
+    border: 2px solid #f4325f;
+}
+
+.target-empty.selected {
+    border: 4px solid #f4325f;
+}
+
+.target .line {
+    position: absolute;
+    top: 100%;
+    left: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 500ms;
+    transform-origin: 50% 0%;
+    transform: scaleY(0);
+}
+
+.target .line div:first-child {
+    background-color: #f4325f;
+    width: 1px;
+    transition-duration: 500ms;
+    height: 100%;
+}
+
+.target .line div:last-child {
+    border: 2px solid #f4325f;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    transition-duration: 500ms;
+}
+
+.target.selected .line {
+    transform: scaleY(1);
+}
+
+.target.selected .line div:last-child {
+    opacity: 1;
+}
+
+.target-info {
+    position: fixed;
+    z-index: -3;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    width: fit-content;
+    left: 28%;
+    bottom: 30%;
+    opacity: 0;
+    transition-duration: 500ms;
+    transform-origin: 50% 0%;
+    transform: scale(0);
+}
+
+.target-info.open {
+    z-index: 3;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.target-info h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #424242;
+}
+
+.target-info p {
+    color: #9d9d9d;
+    font-size: 14px;
+}
+
+.target-info .button {
+    font-size: 14px;
+}
+
+#target-1 {
+    top: 29%;
+    left: 54%;
+}
+
+#target-1 .line {
+    height: auto;
+}
+
+#target-2 {
+    top: 27%;
+    left: 66%;
+}
+
+#target-2 .line {
+    height: 27px;
+    transform: scale(0) rotate(45deg);
+    left: auto;
+    right: 94%;
+    top: 87%;
+}
+
+.target.selected#target-2 .line {
+    transform: scaleY(1) rotate(45deg);
+}
+
+#target-3 {
+    top: 31%;
+    left: 75%;
+}
+
+#target-3 .line {
+    height: 22px;
+}
+
+#target-4 {
+    top: 47%;
+    left: 64%;
+}
+
+#target-4 .line {
+    height: 25px;
+    transform: scale(0) rotate(90deg);
+    left: auto;
+    right: 98%;
+    top: 45%;
+}
+
+.target.selected#target-4 .line {
+    transform: scaleY(1) rotate(90deg);
+}
+
+#target-5 {
+    top: 32%;
+    left: 34%;
+}
+
+#target-5 .line {
+    height: 24px;
+}
+
+#target-6 {
+    top: 27%;
+    left: 14%;
+}
+
+#target-6 .line {
+    height: 36px;
+}
+
+#target-7 {
+    top: 60%;
+    left: 0;
+}
+
+#target-8 {
+    top: 62%;
+    left: 42%;
+}
+
+#target-9 {
+    top: 42%;
+    left: 94%;
+}
+
+/* Выбор квартиры */
+
+#rooms-count-wrap {
+    width: 85%;
+}
+
+#type-wrap .select, #type-wrap .select-values {
+    width: 100%;
+    font-size: 18px;
+}
+
+#roomsCount {
+    width: 100%;
+}
+
+.home {
+    display: none;
+}
+
+.home.selected {
+    display: flex;
+}
+
+.home-plan .floor-number {
+    font-size: 18px;
+    color: #4242428a;
+    font-weight: 500;
+}
+
+.home-plan .appartment {
+    width: 94%;
+    color: #4242428a;
+    background-color: var(--sold-color);
+    border-radius: 15px;
+    padding: 8px;
+    font-weight: 500;
+    transition-duration: 500ms;
+    user-select: none;
+}
+
+.home-plan .appartment.onsale {
+    background-color: var(--on-sale-color);
+    color: #fff;
+}
+
+.home-plan .appartment.onsale:hover,
+.home-plan .appartment.onsale.selected {
+    background-color: var(--on-sale-selected-color);
+}
+
+.home-plan .appartment.reserve:hover,
+.home-plan .appartment.reserve.selected {
+    background-color: var(--reserve-selected-color);
+}
+
+.home-plan .appartment.booking:hover,
+.home-plan .appartment.booking.selected {
+    background-color: var(--booking-selected-color);
+}
+
+.home-plan .appartment.reserve {
+    background-color: var(--reserve-color);
+    color: #fff;
+}
+
+.home-plan .appartment.onsale, 
+.home-plan .appartment.reserve, 
+.home-plan .appartment.booking, 
+.home-plan .appartment.selected {
+    cursor: pointer;
+}
+
+.home-plan .appartment.booking {
+    background-color: var(--booking-color);
+    color: #fff;
+}
+
+.home-plan .appartment .number {
+    font-size: 17px;
+    line-height: 17px;
+    white-space: nowrap;
+}
+
+.home-plan .appartment .square {
+    font-size: 13px;
+}
+
+.home-plan .meta, .home-plan input {
+    display: none;
+}
+
+.status .circle {
+    border: 1px solid #d0d4e0;
+}
+
+.status {
+    font-size: 18px;
+    font-weight: 500;
+    color: #9d9d9d;
+}
+
+.status .onsale .circle {
+    background-color: var(--on-sale-color);
+}
+
+.status .reserve .circle {
+    background-color: var(--reserve-color);
+}
+
+.status .booking .circle {
+    background-color: var(--booking-color);
+}
+
+.status .sold .circle {
+    background-color: var(--sold-color);
+}
+
+.appartment-block {
+    margin-top: 140px;
+}
+
+.appartment-info .title p:first-child,
+.appartment-info .title .rooms-count {
+    font-weight: 500;
+    font-size: 24px;
+    color: #424242;
+}
+
+.appartment-info .title .room-class {
+    font-size: 48px;
+    color: #2dccff;
+    font-weight: 500;
+    line-height: 46px;
+}
+
+.appartment-info figure p {
+    font-size: 26px;
+    font-weight: 500;
+    color: #424242;
+    line-height: 100%;
+}
+
+.appartment-info button.button {
+    width: 60%;
+}
+
+.appartment-plan {
+    width: 100%;
+}
+
+.appartment-slider {
+    width: 90%;
+}
+
+.appartment-plan img {
+    width: 100%;
+}
+
+.slider .images {
+    position: relative;
+}
+
+.slider .images {
+    position: relative;
+}
+
+.appartment-slider .images {
+    height: 250px;
+}
+
+.slider .images img {
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition-duration: 500ms;
+}
+
+.slider .images img {
+    opacity: 0;
+    z-index: -3;
+}
+
+.slider .images img.selected {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Информационные блоки */
+section.info {
+    margin-top: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f4f6fb;
+}
+
+section.info hr {
+    height: 100px;
+    width: 4px;
+    background-color: #c8cddb;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 20%;
+    display: none;
+}
+
+.num {
+    font-weight: 500;
+    font-size: 72px;
+    color: #2dccff;
+    min-width: 12px;
+}
+
+.num-desc {
+    font-weight: 500;
+    font-size: 36px;
+    color: #424242;
+    min-width: 12px;
+}
+
+.location {
+    margin-top: 100px;
+}
+
+.location-slider .images {
+    width: 350px;
+    height: 280px;
+}
+
+.location .intro {
+    font-size: 22px;
+    font-weight: 500;
+    color: #434343;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.location .button {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.achievement {
+    margin-top: 140px;
+}
+
+.achievement .card {
+    border: none;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 220px;
+    background-color: #f4f6fb;
+    border-radius: 25px;
+    padding: 40px 30px;
+}
+
+.achievement .card h4 {
+    font-size: 24px;
+    color: #424242;
+    font-weight: 500;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.achievement .card div {
+    font-size: 18px;
+    font-weight: 500;
+    color: #9d9d9d;
+    line-height: 120%;
+}
+
+.info.contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.info.contacts .offer p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #232323;
+    line-height: 120%;
+}
+
+.info.contacts .contacts p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #9d9d9d;
+    line-height: 120%;
+    text-align: left;
+}
+
+.commissioning {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.commissioning .title-caption {
+    font-size: 24px;
+    font-weight: 500;
+    color: #424242;
+}
+
+.commissioning .card {
+    width: 100%;
+    height: 320px;
+    border: none;
+    padding: 30px 40px;
+    background-color: #f4f6fb;
+    background-image: url('/local/templates/roseTown/src/static/css/../../media/img/modern-house.png');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: 0 100%;
+    border-radius: 25px;
+}
+
+.commissioning .card.close {
+    background-image: url('/local/templates/roseTown/src/static/css/../../media/icons/padlock.png');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 90% 10%;
+}
+
+.commissioning .card.close p {
+    color: #c8cddb;
+}
+
+.commissioning .num {
+    line-height: 100%;
+}
+
+.commissioning .caption {
+    font-weight: 500;
+    font-size: 24px;
+    color: #9d9d9d;
+    white-space: nowrap;
+}
+
+.commissioning .button {
+    background-color: #c8cddb;
+    width: 280px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commissioning .button:hover {
+    background-color: #f4325f;
+}
+
+.commissioning .date {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.strict-visible-slider .list {
+    position: relative;
+    display: flex;
+}
+
+.strict-visible-slider .slide, .strict-visible-slider .list {
+    width: 100%;
+}
+
+.strict-visible-slider .slide {
+    transition: opacity 500ms ease-in;
+    -moz-transition: opacity 500ms ease-in;
+    -webkit-transition: opacity 500ms ease-in;
+    -o-transition: opacity 500ms ease-in;
+    opacity: 0;
+    position: absolute;
+    z-index: -5;
+}
+
+.strict-visible-slider .slide.selected {
+    opacity: 1;
+    height: auto;
+    position: static;
+}
+
+.strict-visible-slider .slide img {
+    width: 100%;
+}
+
+.strict-visible-slider .slide div:nth-child(2) img {
+    width: 32%;
+}
+
+.strict-visible-slider .slide div:nth-child(3) img {
+    width: 49%;
+}
+
+.strict-visible-slider-progress {
+    width: 250px;
+}
+
+section.plan {
+    padding-top: 120px;
+}
+
+section.plan .card {
+    width: 100%;
+    border: none;
+    background-color: #f4f6fb;
+    padding: 30px 40px;
+    border-radius: 25px;
+}
+
+section.plan .appartment-class {
+    font-size: 50px;
+    color: #2dccff;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+section.plan .square {
+    font-size: 24px;
+    color: #424242;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+section.plan img {
+    max-width: 100%;
+    height: auto;
+}
+
+section.plan .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c8cddb;
+    color: #fff;
+    width: 80%;
+    height: 45px;
+    margin: auto;
+}
+
+section.plan .button:hover {
+    background-color: #2dccff;
+}
+
+section.map {
+    position: relative;
+    margin-top: 120px;
+}
+
+#map {
+    width: 100%;
+    height: 800px;
+}
+
+[class*="ymaps-2"][class*="-ground-pane"] {
+    filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1); 
+	-o-filter: grayscale(1);
+}
+
+section.map .controls {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 500;
+    position: absolute;
+    z-index: 3000;
+    top: 10%;
+    right: 10%;
+}
+
+section.map .controls div {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2dccff;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #363a3e;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 140%;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+footer nav.menu {
+    margin-top: 0;
+}
+
+footer .info {
+    margin-top: 60px;
+}
+
+footer a.phone {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer .options-menu {
+    height: 100%;
+}
+
+footer .events a {
+    text-decoration: underline;
+}
+
+footer .socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    background-color: #fff;
+    transition-duration: 200ms;
+}
+
+footer .socials a svg path {
+    fill: #363a3e;
+}
+
+footer .socials a:hover {
+    background-color: #2dccff;
+}
+
+footer .socials a:hover svg path {
+    fill: #fff;
+}
+
+footer .copyright {
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 120px;
+}
+
+@media (min-width: 576px) {
+    .logo .name {
+        font-size: 19px;
+    }
+    
+    .logo .desc {
+        font-size: 7.5px;
+    }
+
+    .phone {
+        font-size: 16px;
+    }
+
+    .burger {
+        width: 32px;
+        height: 23px;
+        cursor: pointer;
+    }
+
+    #target-1 {
+        top: 32%;
+        left: 54%;
+    }
+    
+    #target-2 {
+        top: 35%;
+        left: 63%;
+    }
+    
+    #target-3 {
+        top: 37%;
+        left: 75%;
+    }
+    
+    #target-4 {
+        top: 53%;
+        left: 64%;
+    }
+    
+    #target-5 {
+        top: 37%;
+        left: 34%;
+    }
+    
+    #target-6 {
+        top: 37%;
+        left: 14%;
+    }
+    
+    #target-8 {
+        top: 66%;
+        left: 42%;
+    }
+    
+    #target-9 {
+        top: 45%;
+        left: 95%;
+    }
+    
+    #target-1 .line {
+        height: 18px;
+    }
+
+    .appartment-slider .images {
+        height: 350px;
+        position: relative;
+    }
+
+    .location-slider .images {
+        width: 450px;
+        height: 380px;
+    }
+}
+
+@media (min-width: 768px) {
+    .phone {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 40%;
+    }
+
+    .logo .name {
+        font-size: 20px;
+    }
+    
+    .logo .desc {
+        font-size: 8px;
+        line-height: 1.751;
+    }
+    
+
+    .target-info {
+        padding: 35px;
+        left: 35%;
+        bottom: 30%;
+    }
+    
+    .target-info h3 {
+        font-size: 30px;
+    }
+    
+    .target-info p {
+        font-size: 18px;
+    }
+    
+    .target-info .button {
+        font-size: 18px;
+    }
+
+    #target-1 {
+        top: 36%;
+        left: 54%;
+    }
+    
+    #target-2 {
+        top: 39%;
+        left: 63%;
+    }
+    
+    #target-3 {
+        top: 42%;
+        left: 75%;
+    }
+    
+    #target-4 {
+        top: 53%;
+        left: 64%;
+    }
+    
+    #target-5 {
+        top: 40%;
+        left: 34%;
+    }
+    
+    #target-6 {
+        top: 40%;
+        left: 14%;
+    }
+
+    #target-8 {
+        top: 68%;
+        left: 42%;
+    }
+
+    #target-9 {
+        top: 47%;
+    }
+
+    #type-wrap .select {
+        width: 300px;
+        height: auto;
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+
+    .appartment-plan {
+        width: 320px;
+    }
+
+    .appartment-slider .images {
+        height: 550px;
+        position: relative;
+    }
+
+    .location-slider .images {
+        width: 550px;
+        height: 480px;
+    }
+
+    .location .button {
+        width: 380px;
+    }
+
+    .strict-visible-slider .slide div:first-child img {
+        height: 100%;
+    }
+
+    .strict-visible-slider .slide div:nth-child(2) img,
+    .strict-visible-slider .slide div:nth-child(3) img {
+        width: 100%;
+    }
+
+    .strict-visible-slider .slide div:nth-child(2) img {
+        height: 32%;
+    }
+
+    .strict-visible-slider .slide div:nth-child(3) img {
+        height: 49%;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .logo .name {
+        font-size: 28px;
+    }
+    
+    .logo .desc {
+        font-size: 12px;
+    }
+
+    .menu {
+        margin-top: 30px;
+    }
+
+    .target {
+        padding: 5px 35px;
+    }
+
+    #target-1 {
+        top: 39%;
+        left: 50%;
+    }
+    
+    #target-2 {
+        top: 42%;
+        left: 63%;
+    }
+    
+    #target-3 {
+        top: 44%;
+        left: 77%;
+    }
+    
+    #target-4 {
+        top: 53%;
+        left: 63%;
+    }
+    
+    #target-5 {
+        top: 43%;
+        left: 34%;
+    }
+    
+    #target-6 {
+        top: 43%;
+        left: 14%;
+    }
+
+    #target-9 {
+        top: 48%;
+    }
+
+    #target-5 .line, #target-6 .line, #target-3 .line {
+        height: 40px;
+    }
+
+    #type-wrap .select {
+        width: 100%;
+    }
+
+    .choose-apartment .button {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+    }
+
+    .choose-apartment .select, 
+    .choose-apartment .button,
+    #type-wrap .select 
+    {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .appartment-slider .images {
+        height: 650px;
+        position: relative;
+    }
+
+    .location-slider .images {
+        width: 450px;
+        height: 380px;
+    }
+
+    .achievement .card {
+        width: 90%;
+        padding: 10px 20px;
+        height: 200px;
+    }
+
+    .achievement .card h4 {
+        font-size: 20px;
+    }
+
+    .achievement .card p {
+        font-size: 14px;
+    }
+
+    .achievement .card img {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .info.contacts {
+        padding-top: 160px;
+        padding-bottom: 160px;
+    }
+    
+    .info.contacts .offer p {
+        font-size: 20px;
+    }
+    
+    .info.contacts .contacts p {
+        font-size: 20px;
+    }
+
+    .commissioning .caption {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .burger-menu {
+        width: 60%;
+        left: -60%;
+    }
+
+    .logo img {
+        width: 38%;
+    }
+
+    .logo .name {
+        font-size: 30px;
+    }
+    
+    .logo .desc {
+        font-size: 13.2px;
+        line-height: 1.751;
+    }
+    
+    .menu {
+        margin-top: 40px;        
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .target {
+        font-size: 16px;
+        padding: 5px 30px;
+    }
+
+    .target-info {
+        left: 40%;
+        bottom: 30%;
+    } 
+
+    #target-1 {
+        top: 40%;
+        left: 53%;
+    }
+    
+    #target-2 {
+        top: 43%;
+        left: 63%;
+    }
+
+    #target-7 {
+        top: 65%;
+        left: 2%;
+    }
+    
+    #target-9 {
+        top: 49%;
+        left: 95%;
+    }
+
+    #target-1 .line {
+        height: 25px;
+    }
+    
+    #target-2 .line {
+        height: 30px;
+    }
+
+    .choose-apartment {
+        margin-top: 100px;
+    }
+
+    .choose-apartment .button {
+        font-weight: 500;
+    }
+
+    .appartment-plan {
+        width: 280px;
+    }
+
+    .appartment-slider .images {
+        height: 450px;
+        position: relative;
+    }
+
+    section.info hr {
+        display: block;
+    }
+
+    .num {
+        font-size: 46px;
+    }
+
+    .num-desc {
+        font-size: 32px;
+    }
+
+    .location {
+        margin-top: 140px;
+    }
+
+    .location-slider .images {
+        width: 90%;
+        height: 280px;
+    }
+
+    .location .intro {
+        font-size: 22px;
+        font-weight: 500;
+        color: #434343;
+        margin-top: 40px;
+        margin-bottom: 60px;
+        width: 650px;
+    }
+
+    .location .button {
+        width: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+    }
+
+    .location-slider .images {
+        width: 500px;
+        height: 400px;
+    }
+
+    .achievement .card {
+        height: 220px;
+        padding: 40px 30px;
+    }
+    
+    .achievement .card h4 {
+        font-size: 24px;
+        height: 60px;
+    }
+    
+    .achievement .card p {
+        font-size: 18px;
+    }
+
+    .achievement .card img {
+        width: 90%;
+    }
+
+    .info.contacts {
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
+    
+    .info.contacts .offer p {
+        font-size: 24px;
+    }
+    
+    .info.contacts .contacts p {
+        font-size: 24px;
+    }
+
+    .commissioning .caption {
+        font-size: 24px;
+    }
+
+    section.plan .card {
+        width: 90%;
+        border: none;
+        background-color: #f4f6fb;
+        padding: 30px 40px;
+        border-radius: 25px;
+    }
+    
+    section.plan .appartment-class {
+        font-size: 66px;
+        color: #2dccff;
+        line-height: 100%;
+        font-weight: 500;
+    }
+    
+    section.plan .square {
+        font-size: 32px;
+        color: #424242;
+        font-weight: 500;
+        line-height: 110%;
+    }
+    
+    section.plan img {
+        max-width: 100%;
+        height: 320px;
+    }
+    
+    section.plan .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #c8cddb;
+        color: #fff;
+        width: 80%;
+        height: 45px;
+        margin: auto;
+    }
+    
+    section.plan .button:hover {
+        background-color: #2dccff;
+    }
+}
+
+@media (min-width: 1400px) {
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    .logo img {
+        width: 30%;
+    }
+
+    .logo .name {
+        font-size: 36px;
+    }
+    
+    .logo .desc {
+        font-size: 16px;
+    }
+
+    .menu {
+        margin-top: 60px;
+    }
+
+    .target-info {
+        left: 43%;
+        bottom: 40%;
+    } 
+
+    #target-1 .line {
+        height: 35px;
+    }
+    
+    #target-2 .line {
+        height: 35px;
+    }
+    
+    #target-3 .line {
+        height: 60px;
+    }
+    
+    #target-4 .line {
+        height: 40px;
+    }
+    
+    #target-5 .line {
+        height: 60px;
+    }
+    
+    #target-6 .line {
+        height: 70px;
+    }
+    
+    .choose-apartment .button {
+           font-size: 20px;
+           padding: 5px 20px;
+    }
+
+    #type-wrap .select {
+        width: 100%;
+    }
+
+    .select.extremum {
+        width: 100%;
+        height: auto;
+    }
+
+    .select.extremum div {
+        font-size: 16px;
+    }
+
+    .choose-apartment .select, 
+    .choose-apartment .button,
+    #type-wrap .select,
+    .select.extremum
+    {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    
+    .appartment-slider .images {
+        height: 550px;
+        position: relative;
+    }
+
+    .num {
+        font-size: 66px;
+    }
+
+    .num-desc {
+        font-size: 32px;
+    }
+
+    .location-slider .images {
+        width: 600px;
+        height: 500px;
+    }
+}
+@media (min-width: 1600px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1600px;
+    }
+
+    .logo img {
+        width: 25%;
+    }
+
+    .logo .name {
+        font-size: 38px;
+    }
+    
+    .logo .desc {
+        font-size: 17px;
+    }
+
+    .select {
+        font-size: 20px;
+        padding: 5px 20px;
+        display: flex;
+        border-radius: 25px;
+        justify-content: center;
+    }
+
+    #floor-block .select {
+        width: 80px;
+    }
+
+    .button {
+        font-size: 22px;
+    }
+
+    .phone {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .menu {
+        margin-top: 80px;
+    }
+
+    .menu a {
+        font-size: 20px;
+    }
+
+    #target-1 {
+        top: 41%;
+        left: 55%;
+    }
+    
+    #target-2 {
+        top: 45%;
+        left: 62%;
+    }
+
+    .location-slider .images {
+        width: 800px;
+        height: 600px;
+    }
+
+    .commissioning .card {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1800px) {
+    #target-1 {
+        top: 40%;
+        left: 54%;
+    }
+    
+    #target-2 {
+        top: 44%;
+        left: 63%;
+    }
+    
+    #target-3 {
+        top: 44%;
+        left: 75%;
+    }
+    
+    #target-4 {
+        top: 56%;
+        left: 64%;
+    }
+    
+    #target-5 {
+        top: 43%;
+        left: 34%;
+    }
+    
+    #target-6 {
+        top: 44%;
+        left: 14%;
+    }
+    
+    #target-9 {
+        top: 50%;
+        left: 96%;
+    }
+    
+    #target-1 .line {
+        height: 55px;
+    }
+    
+    #target-2 .line {
+        height: 45px;
+    }
+    
+    #target-3 .line {
+        height: 80px;
+    }
+    
+    #target-4 .line {
+        height: 50px;
+    }
+    
+    #target-5 .line {
+        height: 80px;
+    }
+    
+    #target-6 .line {
+        height: 90px;
+    }
+}
+/* End */
+
+
+/* Start:/local/templates/roseTown/src/static/css/fonts.css?169683146211320*/
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Regular.eot');
+    src: local('Gilroy Regular'), local('Gilroy-Regular'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Regular.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-ExtraboldItalic.eot');
+    src: local('Gilroy Extrabold Italic'), local('Gilroy-ExtraboldItalic'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-ExtraboldItalic.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-ExtraboldItalic.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-ExtraboldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Bold.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Bold.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Black.eot');
+    src: local('Gilroy Black'), local('Gilroy-Black'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Black.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Black.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Black.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Light.eot');
+    src: local('Gilroy Light'), local('Gilroy-Light'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Light.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Light.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Semibold.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Semibold.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Medium.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Medium.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-MediumItalic.eot');
+    src: local('Gilroy Medium Italic'), local('Gilroy-MediumItalic'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-MediumItalic.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-MediumItalic.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-BlackItalic.eot');
+    src: local('Gilroy Black Italic'), local('Gilroy-BlackItalic'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-BlackItalic.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-BlackItalic.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-UltraLight.eot');
+    src: local('Gilroy UltraLight'), local('Gilroy-UltraLight'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-UltraLight.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-UltraLight.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-RegularItalic.eot');
+    src: local('Gilroy Regular Italic'), local('Gilroy-RegularItalic'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-RegularItalic.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-RegularItalic.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-SemiboldItalic.eot');
+    src: local('Gilroy Semibold Italic'), local('Gilroy-SemiboldItalic'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-SemiboldItalic.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-SemiboldItalic.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-HeavyItalic.eot');
+    src: local('Gilroy Heavy Italic'), local('Gilroy-HeavyItalic'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-HeavyItalic.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-HeavyItalic.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Extrabold.eot');
+    src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Extrabold.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Extrabold.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-BoldItalic.eot');
+    src: local('Gilroy Bold Italic'), local('Gilroy-BoldItalic'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-BoldItalic.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-BoldItalic.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-UltraLightItalic.eot');
+    src: local('Gilroy UltraLight Italic'), local('Gilroy-UltraLightItalic'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-UltraLightItalic.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-UltraLightItalic.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-UltraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-LightItalic.eot');
+    src: local('Gilroy Light Italic'), local('Gilroy-LightItalic'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-LightItalic.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-LightItalic.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Heavy.eot');
+    src: local('Gilroy Heavy'), local('Gilroy-Heavy'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Heavy.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Heavy.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Thin.eot');
+    src: local('Gilroy Thin'), local('Gilroy-Thin'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Thin.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Thin.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Thin.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-ThinItalic.eot');
+    src: local('Gilroy Thin Italic'), local('Gilroy-ThinItalic'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-ThinItalic.woff2') format('woff2'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-ThinItalic.woff') format('woff'),
+        url('/local/templates/roseTown/src/static/css/../../media/fonts/Gilroy/Gilroy-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+/* End */
+/* /local/templates/roseTown/src/static/css/style.css?169746060733074 */
+/* /local/templates/roseTown/src/static/css/fonts.css?169683146211320 */

@@ -1,0 +1,16 @@
+.l-side-item {
+  margin-bottom: 35px;
+
+  &__title {
+    font-size: pxtoem(14px);
+    font-weight: $headings-font-weight;
+    border-bottom: 4px solid $brand-primary;
+    padding-bottom: 18px;
+    margin-top: 0;
+  }
+
+  &__block {
+    margin: 15px 0;
+  }
+
+}

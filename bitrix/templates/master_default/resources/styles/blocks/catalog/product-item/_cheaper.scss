@@ -1,0 +1,32 @@
+.cheaper-link {
+
+  &__icon {
+    background: #fff;
+    border: 1px solid #898886;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: pxtoem(5px);
+    padding: 2px;
+    vertical-align: middle;
+    
+    &:after {
+      background: #282e3a;
+      border-radius: 50%;
+      content: '%';
+      color: #fff;
+      display: table-cell;
+      font-family: Myriad Pro;
+      font-size: pxtoem(18px);
+      font-weight: bold;
+      height: pxtoem(22px);
+      text-align: center;
+      vertical-align: middle;
+      width: pxtoem(22px); 
+    }
+  }
+  
+  &:hover {
+    text-decoration: none;
+  }
+
+}

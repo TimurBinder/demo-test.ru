@@ -1,0 +1,3 @@
+.alert-gray {
+  @include alert-variant(#f7f7f8, #f7f7f8, $gray-max);
+}

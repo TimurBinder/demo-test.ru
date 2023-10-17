@@ -1,0 +1,6 @@
+<?php
+$MESS["RS_LIGHTBASKET_ORDER_NAME"] = "Оформление заказа";
+$MESS["RS_LIGHTBASKET_ORDER_DESCRIPTION"] = "Оформление заказав";
+$MESS['RS_LIGHTBASKET_COMPONENTS_REDSIGN'] = "ALFA Systems";
+$MESS["RS_LIGHTBASKET_COMPONENTS_LIGHTBASKET"] = "Redsign LightBasket";
+?>

@@ -1,0 +1,1 @@
+<img width="800" src="/bitrix/updates/rt123.jpg" height="100"><br>

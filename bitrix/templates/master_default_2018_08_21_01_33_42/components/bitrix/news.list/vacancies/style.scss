@@ -1,0 +1,41 @@
+@import '../../../../resources/styles/bootstrap-variables';
+
+.b-vacancies {
+  &__btns {
+    margin-bottom: 25px;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow-x: auto;
+
+    .btn {
+      float: none !important;
+    }
+
+    .btn + .btn {
+      margin-left: -5px !important;
+    }
+
+  }
+}
+
+.b-vacancies-tools {
+  margin: 25px 0px 0px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  > * {
+    margin: 5px 0;
+  }
+
+  &__share {
+    font-size: $font-size-small;
+  }
+
+  &__socials {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,53 @@
+@mixin master-logo {
+  line-height: 1;
+
+  &__name {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  &__name:hover,
+  &__name:focus,
+  &__name:active {
+    text-decoration: none;
+    color: $brand-primary;
+  }
+
+  @media (min-width: $screen-xs) {
+    &__name {
+      font-size: 32px;
+    }
+  }
+  @media (min-width: $grid-float-breakpoint) {
+    &__name {
+      font-size: 40px;
+    }
+  }
+}
+@mixin master-head-phone() {
+  display: inline-block;
+
+  &__text {
+    display: none;
+    font-weight: bold;
+    font-size: 29px;
+    color: $dark-color;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+
+  @media (min-width: $screen-md-min) {
+    display: block;
+
+    &__icon {
+      display: none;
+    }
+
+    &__text {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,2 @@
+<?php
+$MESS['RS_LIGHTBASKET_PUBLIC_BASKET'] = 'Корзина';

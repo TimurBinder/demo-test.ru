@@ -1,0 +1,12 @@
+@import '../partials.scss';
+
+.b-head-icon {
+  @include master-icon--light();
+  @include master-icon--cart();
+
+  @media (min-width: $screen-xs-min) {
+    @include master-icon--fill();
+    @include master-icon--full();
+    @include master-icon--hover();
+  }
+}

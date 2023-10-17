@@ -1,0 +1,90 @@
+.filter_top {
+  
+  &__item {
+    cursor: pointer;
+    display: inline-block;
+    font-size: pxtoem($font-size-small);
+    font-weight: normal;
+    margin: 0 $line-height-computed*0.4 $line-height-computed 0;
+    text-align: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &.disabled {
+      cursor: default;
+      opacity: .5;
+    }
+    
+    .owl-item & {
+      display: block;
+      padding-left:  floor(($grid-gutter-width / 2));
+      padding-right: ceil(($grid-gutter-width / 2));
+    }
+  }
+
+  &__canvas {
+    @extend %vcenter;
+
+    display: block;
+    height: $line-height-computed*5;
+    margin-bottom: $line-height-computed/2;
+  }
+  
+  &__icon {
+    @extend %vcenter__in;
+    
+    max-height: 100%;
+  }
+  
+  .owl-carousel .owl-item &__icon {
+    display: inline-block;
+    width: auto;
+  }
+  
+  &__name {
+    color: $brand-primary;
+    font-size: pxtoem($font-size-small);
+    display: block;
+  }
+  
+  &__btn {
+    border: 2px solid $brand-primary;
+    border-radius: $line-height-computed/2 + $line-height-computed/5 + 2px;
+    color: $gray-max;
+    display: block;
+    padding: $line-height-computed*0.25 $line-height-computed*0.75;
+    transition: all .3s ease;
+  }
+  
+  &__btn:hover,
+  &__item.checked &__btn {
+    background-color: darken($brand-primary, 10%);
+    border-color: darken($brand-primary, 10%);
+    color: #fff;
+  }
+
+  &__box {
+    @extend %clearfix;
+
+    & + &,
+    &.checked,
+    &.checked + &.checked {
+      display: none;
+    }
+    
+    &.checked + & {
+      display: block;
+    }
+    
+    .carousel__nav {
+      float: right;
+    }
+  }
+}

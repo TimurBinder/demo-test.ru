@@ -1,0 +1,23 @@
+@import '../../../../../../resources/styles/bootstrap-variables';
+@import '../../../../../../resources/styles/functions';
+
+.bx-filter.bx-default .bx-filter-parameters-box-title {
+  background-color: $brand-primary;
+  color: #fff;
+  
+  &:hover {
+    background-color: darken($brand-primary, 10%);
+  }
+}
+
+.bx-filter.bx-default .bx-filter-parameters-box-hint {
+  .hint {
+    border-color: #fff;
+    color: #fff;
+  }
+}
+  
+
+.bx-filter.bx-default .bx-filter-block {
+  background-color: #f7f7f8;
+}

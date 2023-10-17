@@ -1,0 +1,73 @@
+.rsform {
+  //max-width: 400px;
+  overflow: hidden;
+  height: 100%;
+
+  .field-wrap {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .form-control {
+    height: 45px;
+  }
+
+  &__bottom-button {
+    text-align: left;
+  }
+  
+  &__all-field {
+    height: 100%;
+    width: 100%;
+    margin: 10px 0 0;
+  }
+
+  &__captcha-input {
+    margin: 0 0 10px;
+  }
+
+  textarea.form-control {
+    width: 100%;
+    max-width: 100%;
+    min-height: 45px;
+  }
+
+  &__bottom-ps {
+    margin-top: 10px;
+  }
+
+  .field-wrap label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: $font-size-small;
+    color: #000;
+  }
+
+  &__captcha-image {
+    img {
+      height: 45px;
+    }
+  }
+
+  .form-control:active,
+  .form-control:focus {
+    border-color: #000;
+    box-shadow: none;
+  }
+
+  .required {
+    color: $brand-danger;
+  }
+
+  &__field-editor {
+    @extend .form-control;
+  }
+
+  & &__field-editor {
+    height: auto;
+    padding: 0;
+  }  
+
+}

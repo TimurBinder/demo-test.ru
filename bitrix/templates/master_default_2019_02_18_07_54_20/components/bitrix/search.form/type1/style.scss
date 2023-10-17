@@ -1,0 +1,80 @@
+@import '../../../../resources/styles/bootstrap-variables';
+
+.b-head-search {
+  display: block;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+
+  &__icon {
+    display: inline-block;
+    position: absolute;
+    top: 0;;
+    padding: 15px 20px;
+    right: 0;
+  }
+  &__icon:hover {
+    background: darken($brand-primary, 10%);
+  }
+  &__icon .icon-svg {
+    font-size: 25px;
+    color: $navbar-default-link-color;
+  }
+
+  &__form {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: $dark-color;
+    height: 55px;
+    padding: 8px 15px;
+    opacity: 0;
+    transition: opacity .3s;
+    display: flex;
+  }
+
+
+  &__form .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    flex: 1 0 auto;
+  }
+
+  &__form .btn {
+    flex: 0 1 auto;
+    height: 40px;
+    margin-left: 3px;
+    line-height: 0;
+    display: inline-flex;
+    align-self: center;
+  }
+
+
+  &__close {
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+    padding: 4px;
+    cursor: pointer;
+    transition: .15s;
+    flex: 0 1 auto;
+    margin-left: 15px;
+  }
+
+  &__close:hover {
+    background: darken($dark-color, 10%);
+  }
+
+  &__close .icon-svg {
+    font-size: 32px;
+    color: #fff;
+  }
+
+  &.is-open &__form {
+    opacity: 1;
+  }
+}

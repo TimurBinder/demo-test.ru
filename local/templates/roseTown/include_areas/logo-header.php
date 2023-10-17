@@ -1,0 +1,1 @@
+<img width="100%" src="<?=SITE_TEMPLATE_PATH?>/src/media/img/logo.png" alt="Логотип">

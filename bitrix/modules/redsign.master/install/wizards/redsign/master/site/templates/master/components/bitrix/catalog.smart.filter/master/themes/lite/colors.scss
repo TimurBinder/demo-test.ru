@@ -1,0 +1,7 @@
+@import '../../../../../../resources/styles/bootstrap-variables';
+@import '../../../../../../resources/styles/functions';
+
+.bx-filter.bx-lite .bx-filter-parameters-box-title {
+  border: 1px solid $border-color;
+  border-bottom: none;
+}

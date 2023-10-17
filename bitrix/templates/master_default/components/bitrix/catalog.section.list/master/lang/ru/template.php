@@ -1,0 +1,4 @@
+<?
+$MESS['RS.MASTER.BCSL_MASTER.MORE'] = 'Подробнее';
+
+$MESS["RS.MASTER.MORE_BUTTON_TEXT_DFEFAULT"] = "Еще #COUNT# категорий";

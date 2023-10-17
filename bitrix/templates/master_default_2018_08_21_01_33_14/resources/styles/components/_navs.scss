@@ -1,0 +1,63 @@
+.nav-wrap {
+  margin-bottom: $line-height-computed*2;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+}
+
+.nav-tabs {
+  font-size: 0;
+  list-style: none;
+  white-space: nowrap;
+
+
+  > li {
+    float: none;
+    display: inline-block;
+    font-size: $font-size-base;
+
+    & > a,
+    & > a:hover,
+    &.active > a,
+    &.active > a:hover,
+    &.active > a:focus {
+      &:before {
+        background-color: $nav-tabs-border-color;
+        content: '';
+        display: block;
+        height: 6px;
+        left: 0;
+        margin: 0 -1px 0 -1px;
+        position: absolute;
+        right: 0;
+        top: -1px;
+        transition: width 0.5s ease;
+        width: calc(100% + 2px);
+      }
+    }
+    
+    > a {
+      border: 1px solid $nav-tabs-border-color;
+      color: $text-color;
+      margin-right: -1px;
+      position: relative;
+      
+      &:before {
+        transition: none;
+        width: 0;
+        
+      }
+      
+      &:hover:before {
+        background-color: $brand-primary;
+      }
+    }
+    
+    
+  }
+}

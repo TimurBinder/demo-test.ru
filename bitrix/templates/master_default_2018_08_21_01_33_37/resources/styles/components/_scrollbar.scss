@@ -1,0 +1,51 @@
+.scrollbar-inner {
+}
+
+.scrollbar-rail {
+  & > .scroll-element {
+
+    .scroll-element_size {
+      background-color: #dcdce0;
+    }
+
+    .scroll-bar {
+      background-color: transparent;
+      box-shadow: none;
+      cursor: pointer;
+      
+      &:after {
+        background-color: $brand-primary;
+        border-radius: 2px;
+        content: '';
+        display: block;
+      }
+      
+      &:hover {
+        &:after {
+          background-color: darken($brand-primary, 10);
+        }
+      }
+    }
+
+    .scroll-element_outer:hover {
+      
+      .scroll-element_size {
+        background-color: #dcdce0;
+      }
+      
+      .scroll-bar {
+        box-shadow: none;
+      }
+    }
+
+    &.scroll-x {
+      .scroll-bar {
+        &:after {
+          height: 4px;
+          margin-top: 3px;
+        }
+      }
+    }
+    
+  }
+}

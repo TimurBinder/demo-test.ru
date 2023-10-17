@@ -1,0 +1,145 @@
+body,
+html {
+  height: 100%;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+a:active {
+  outline: 0;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.l-footer {
+  flex: 0 0 auto;
+}
+
+.l-page {
+  flex: 1 0 auto;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+
+  &.breadcrumb-center {
+    .l-page__title {
+      text-align: center;
+    }
+  }
+
+  &.has-sidebar,
+  &.has-container {
+    /* @include container-fixed(); */
+    @extend .container;
+
+    margin-bottom: 40px;
+
+    /* @media (min-width: $screen-sm-min) { */
+      /* width: $container-sm; */
+    /* } */
+    /* @media (min-width: $screen-md-min) { */
+      /* width: $container-md; */
+    /* } */
+    /* @media (min-width: $screen-lg-min) { */
+      /* width: $container-lg; */
+    /* } */
+  }
+
+  &__sidebar {
+    // @extend .col-sm-3;
+    // @extend .col-sm-pull-9;
+    display: none;
+  }
+
+  &.has-sidebar &__content {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &.is-left &__sidebar {
+    @extend .col-sm-3;
+    @extend .col-sm-pull-9;
+    padding-left: 0;
+    padding-right: $grid-gutter-width / 2;
+  }
+
+  &.is-left &__content {
+    @extend .col-sm-9;
+    @extend .col-sm-push-3;
+  }
+
+  &.is-right &__sidebar {
+    @extend .col-sm-3;
+    padding-right: 0;
+    padding-left: $grid-gutter-width / 2;
+    //@extend .col-sm-push-9;
+  }
+
+  &.is-right &__content {
+    @extend .col-sm-9;
+    // @extend .col-sm-pull-9;
+  }
+
+  &.has-sidebar &__content .container,
+  &.has-sidebar &__content .container-fluid {
+    width: 100%;
+    padding: 0;
+  }
+
+  &__title h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    word-break: break-word;
+  }
+
+  /* &:not(.has-sidebar) &__title { */
+    /* @extend .container; */
+  /* } */
+
+  &__title {
+    @extend .container;
+  }
+
+  &.has-container &__title {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    &.has-sidebar.is-left &__content {
+      padding-left: $grid-gutter-width / 2;
+    }
+    &.has-sidebar.is-right &__content {
+      padding-right: $grid-gutter-width / 2;
+    }
+    &__sidebar {
+      display: block;
+    }
+  }
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}

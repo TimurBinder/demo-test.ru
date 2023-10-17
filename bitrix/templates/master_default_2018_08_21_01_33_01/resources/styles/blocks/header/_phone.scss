@@ -1,0 +1,5 @@
+@import 'helpers';
+
+.b-head-phone {
+  @include master-head-phone();
+} 

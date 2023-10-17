@@ -1,0 +1,11 @@
+.alert-gray {
+  @include alert-variant(#f7f7f8, #f7f7f8, $gray-max);
+}
+
+.alert-success,
+.notetext,
+.alert {
+  @media (max-width: $screen-xs-max) {
+    display: inline-block;
+  }
+}

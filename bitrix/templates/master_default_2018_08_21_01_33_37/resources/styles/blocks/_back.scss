@@ -1,0 +1,60 @@
+.b-back {
+  font-size: $font-size-small;
+  color: $gray;
+  margin: 60px 0;
+
+  &__button,
+  &__share {
+    display: block;
+    margin: 5px 0;
+  }
+
+  &__button-icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__button {
+    display: inline-block;
+    color: $gray;
+
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none;
+    }
+
+    .icon-svg {
+      font-size: 18px;
+      margin-top: -4px;
+      margin-right: 10px;
+      color: $text-color;
+    }
+
+    &:hover .icon-svg {
+      color: $brand-primary;
+    }
+  }
+
+  &__share > span,
+  &__share > .ya-share2 {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__share > .ya-share2 {
+    margin-left: 10px;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    &__button,
+    &__share {
+      display: inline-block;
+      margin: 0;
+    }
+    > * + *:before {
+      content: $breadcrumb-separator;
+      margin: 20px;
+    }
+  }
+}

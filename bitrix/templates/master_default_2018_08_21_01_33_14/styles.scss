@@ -1,0 +1,25 @@
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+@import 'resources/styles/bootstrap-variables';
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/tables';
+
+.table-master {
+  @extend .table;
+  @extend .table-bordered;
+  @extend .table-striped;
+  
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: $table-cell-padding 18px;
+      }
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}

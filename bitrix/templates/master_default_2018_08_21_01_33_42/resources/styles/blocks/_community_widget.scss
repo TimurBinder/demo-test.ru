@@ -1,0 +1,28 @@
+.l-community-widgets {
+  padding: 30px;
+  text-align: center;
+  word-spacing: 20px;
+
+  * {
+    word-spacing: normal;
+  }
+
+  &__title {
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 660px;
+  }
+}
+
+.b-community-widget {
+  display: inline-block;
+  border: 3px solid $brand-primary;
+  padding: 20px 10px;
+  width: 100%;
+  vertical-align: middle;
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-xs-min) {
+    width: 460px;
+  }
+}

@@ -1,0 +1,56 @@
+.stock__head:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden; }
+
+.stock__head {
+  position: relative; }
+  .stock__head > .stock__name {
+    background-color: #fff;
+    clear: both;
+    float: left;
+    padding-right: 4px; }
+  .stock__head > .stock__balance {
+    background-color: #fff;
+    float: right;
+    padding-left: 4px; }
+    .stock__head > .stock__balance:after {
+      background-color: #d7dbdd;
+      content: '';
+      display: block;
+      height: 1px;
+      left: 0;
+      margin-top: -4px;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      z-index: -1; }
+
+.stock {
+  margin-bottom: 2.15625em; }
+  .stock:last-child {
+    margin-bottom: 0; }
+  .stock__head {
+    display: block;
+    margin-bottom: 0.71875em; }
+  .stock__name {
+    font-weight: bold; }
+  .stock__balance,
+  .stock .stock__val {
+    color: #54a60a; }
+  .stock__icon {
+    color: #8c8b89;
+    pointer-events: none; }
+  .stock.is-empty .stock__balance,
+  .stock.is-empty .stock__val,
+  .stock.is-empty .stock__icon {
+    color: #b01e21; }
+
+.bx_storege > ul {
+  list-style: none;
+  padding-left: 0; }
+
+/*# sourceMappingURL=style.css.map */

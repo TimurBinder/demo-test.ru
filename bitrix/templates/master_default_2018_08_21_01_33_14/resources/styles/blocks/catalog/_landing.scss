@@ -1,0 +1,133 @@
+@import 'landing/banner';
+@import 'landing/pluses';
+@import 'landing/description';
+@import 'landing/files';
+@import 'landing/social';
+@import 'landing/buy';
+@import 'landing/accessory';
+@import 'landing/gallery';
+
+.landing {
+    &__center {
+        text-align: center;
+        margin:0 auto;
+    }
+
+    &__padding {
+        &_top {
+            &__small {
+                padding-top:10px;
+            }
+            &__middle {
+                padding-top:20px;
+            }
+            &__high {
+                padding-top:30px;
+            }
+        }
+
+        &_bottom {
+            &__small {
+                padding-bottom:10px;
+            }
+            &__middle {
+                padding-bottom:20px;
+            }
+            &__high {
+                padding-bottom:30px;
+            }
+        }
+        padding: 30px 0;
+    }
+
+    &__block {
+        position: relative;
+
+        .b-ask-question {
+            margin:0 0;
+        }
+
+        .animate img {
+            opacity:0;
+        }
+    }
+
+    &__border {
+        &__top {
+            border-top:1px solid #ccc;
+        }
+
+        &__bottom {
+            border-bottom:1px solid #ccc;
+        }
+
+        &__both {
+            border-top:1px solid #ccc;
+            border-bottom:1px solid #ccc;
+        }
+
+        &__none {
+            border-top:none;
+            border-bottom:none;
+        }
+    }
+
+    &__setting {
+        position: absolute;
+        top:0;
+        display:none;
+        margin-left: auto; 
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 900;
+
+        &__svg {
+            width: 50px;
+            height: 50px;
+            color: #fff;
+            padding:12px;
+
+            &:hover {
+                animation-name: spin;
+                animation-duration: 4000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        }
+
+        &__link {
+            height: 50px;
+            display: inline-block;
+            background-color: #000;
+        }
+    }
+
+    &__title {
+        text-align: center;
+
+        &__padding {
+            margin-bottom:20px;
+        }
+    }
+
+    &__image_size {
+        &__contain {
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &__cover {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &__center {
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.btn-dark {
+  @include button-variant($color: $btn-primary-color, $background: $dark-color, $border: $dark-color);
+}
+
+.btn-gray {
+  @include button-variant($color: $btn-default-color, $background: #f7f7f8, $border: #e8e8e8);
+}
+
+.btn-default {
+  
+  &:hover,
+  &:active {    
+    color: $btn-primary-color;
+    background-color: darken($btn-primary-bg, 10%);
+    border-color: darken($btn-primary-border, 10%);
+  }
+}
+
+.btn-lg {
+  border-width: 2px;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  padding: $padding-large-vertical + 1px  $padding-large-horizontal + 4px;
+}
+
+.btn-more {
+  border: 1px solid $border-color;
+  color: $text-color;
+  transition: all 0.2s ease, background-color 0.01s ease, color 0.01s ease;
+}
+
+.btn {
+  font-size: pxtoem($font-size-base);
+
+  &.is-loading {
+    animation: btn-more-rotate 1.5s linear infinite;
+    animation-delay: .2s;
+    background-color: transparent;
+    border: 0.3em solid $border-color;
+    border-radius: 1.5em;
+    border-top-color: $brand-primary;
+    height: 3em;
+    color: transparent;
+    padding: 0;
+    pointer-events: none;
+    width: 3em;
+  }
+
+  &,
+  &:focus,
+  &:active,
+  &:active:focus {
+    outline: 0;
+  }
+  
+  &:active,
+  &.active {
+    box-shadow: none;
+  }
+}
+
+@keyframes btn-more-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}

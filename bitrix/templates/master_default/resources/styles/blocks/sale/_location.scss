@@ -1,0 +1,29 @@
+.b-locations-top {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 650px;
+
+  &__item {
+    margin: 7px 0;
+
+    @media (max-width: $screen-sm-max) {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .b-locations-top {
+    &__item {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .b-locations-top {
+    &__item {
+      width: 33%;
+    }
+  }
+}

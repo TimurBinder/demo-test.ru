@@ -1,0 +1,44 @@
+.b-error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 35px 0;
+
+  &__code {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+    border-radius: 50%;
+    background: #f7f7f7;
+    color: $brand-primary;
+    margin: 13px 0;
+    font-size: 50px;
+  }
+
+  &__icon .icon-svg {
+    font-size: 60px;
+    margin-top: 10px;
+  }
+
+  &__title,
+  &__note,
+  &__btn {
+    margin: 13px 0;
+  }
+
+  &__note {
+    max-width: 575px;
+  }
+  &__btn {
+    font-weight: 600;
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding: 100px 0;
+  }
+}

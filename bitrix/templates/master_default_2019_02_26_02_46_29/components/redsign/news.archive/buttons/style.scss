@@ -1,0 +1,38 @@
+@import '../../../../resources/styles/bootstrap-variables';
+@import '../../../../resources/styles/functions';
+
+.b-news-archive {
+  margin-bottom: 30px;
+
+  & > &__list {
+    margin-left: 0;
+  }
+
+  li#{&}__item {
+    padding: 0;
+  }
+
+  .btn {
+    border-color: transparent;
+    color: $brand-primary;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus {
+      border-color: transparent;
+    }
+  }
+
+  .btn-primary {
+    color: #fff;
+  }
+
+  @media (max-width: $screen-sm-min) {
+    .btn {
+      font-size: pxtoem(12px);
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+<img src="<?=SITE_TEMPLATE_PATH?>/src/media/img/logo-about-big.png" alt="Логотип">

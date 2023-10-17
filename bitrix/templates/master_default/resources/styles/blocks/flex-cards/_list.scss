@@ -1,0 +1,46 @@
+.flex-cards-list {
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    @at-root ul#{&} {
+       list-style: none;
+       padding-left: 0;
+       margin-bottom: 0;
+    }
+
+    &__item {
+        width: 100%;
+        margin-top: 10px;
+        padding: 0 10px;
+        
+        display: flex;
+        flex: 1 0 100%;
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-lg-min) {
+        &__item--1_of_4 {
+            width: 50%;
+
+            flex-basis: 50%;
+        }
+    }
+
+    @media (min-width: $screen-lg-min + 1) {
+        &__item--1_of_4 {
+            width: 25%;
+
+            flex-basis: 25%;
+        }
+    
+        &__item--1_of_2 {
+            width: 50%;
+
+            flex-basis: 50%;
+        }
+    }
+
+} 

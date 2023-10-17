@@ -1,0 +1,2 @@
+<?
+$MESS['REDSIGN.MASTER.HOMEPAGE.TYPE3'] = 'Type';

@@ -1,0 +1,52 @@
+.b-footer-contacts {
+  min-width: 190px;
+
+  &__title {
+    display: block;
+    padding-bottom: 15px;
+    font-weight: bold;
+  }
+
+  &__phones {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+  }
+
+  &__phones-icon {
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+  }
+
+  &__phones-icon {
+    font-size: 20px;
+  }
+
+  &__email,
+  &__ask {
+    display: block;
+    padding: 5px 0;
+    font-size: pxtoem($font-size-small);
+  }
+
+  &__recall {
+    padding: 12px 0;
+    font-size: pxtoem($font-size-small);
+    display: block;
+  }
+
+  &__phones a {
+    display: block;
+    font-weight: bold;
+    margin: 3px 0;
+  }
+
+  @media (min-width: $screen-md-min) {
+    &__phones-icon {
+      display: block;
+    }
+  }
+}

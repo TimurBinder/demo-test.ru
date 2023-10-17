@@ -1,0 +1,35 @@
+@mixin file-block {
+  margin-bottom: 15px;
+
+  a {
+    color: $text-color;
+    text-align: center;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $text-color;
+      text-decoration: none;
+    }
+  }
+
+  &__image {
+    display: block;
+    background: #f7f7f8;
+    height: 190px;
+    line-height: 190px;
+    text-align: center;
+  }
+
+  &__name {
+    display: block;
+    margin: 5px 0;
+    font-weight: 700;
+  }
+
+  & &__ext {
+    display: block;
+    font-size: $font-size-small;
+    color: $gray-max;
+  }
+}

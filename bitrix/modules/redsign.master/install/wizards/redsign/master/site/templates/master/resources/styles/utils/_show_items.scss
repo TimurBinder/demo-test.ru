@@ -1,0 +1,19 @@
+$maxItems:		10 !default;
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+	$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+	@include media-breakpoint-up($breakpoint) {
+		@for $i from 1 through $maxItems {
+		
+			.show-items#{$infix}-#{$i} > * {
+				@include first($i) {
+					display: block;
+				}
+				@include after-first($i) {
+					display: none;
+				}
+			}
+		}
+	}
+}

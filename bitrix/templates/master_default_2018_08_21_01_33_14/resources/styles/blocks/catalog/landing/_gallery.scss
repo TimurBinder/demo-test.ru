@@ -1,0 +1,28 @@
+.landing__gallery {
+    &__item {
+        overflow: hidden;
+    }
+
+    &__img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 65%;
+        transition: all .3s ease;
+
+        &:hover {
+            transform:scale(1.15);
+        }
+    }
+
+    &__center {
+        .owl-stage {
+            margin:0 auto;
+        }
+    }
+    
+}

@@ -1,0 +1,45 @@
+.abc__letter {
+  border: 1px solid #d7dbdd;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  color: #676d72;
+  display: inline-block;
+  font-style: normal;
+  height: 1.125rem;
+  line-height: 1.125rem;
+  margin: -2px auto;
+  text-align: center;
+  vertical-align: middle;
+  width: 1.125rem;
+  font-size: 0.875rem;
+  margin-top: -0.875rem;
+  margin-left: -0.125rem; }
+  .abc__letter:hover {
+    background-color: #b01e21;
+    border-color: #b01e21;
+    color: #fff; }
+
+.abc {
+  margin-bottom: 34.5px; }
+  .abc__letter {
+    background-color: #6a0ba7;
+    border-color: #6a0ba7;
+    color: #fff;
+    margin-bottom: 0.71875em; }
+  .abc__link {
+    color: #222222;
+    text-decoration: none; }
+
+@media (max-width: 767px) {
+  .abc_row > .abc:nth-child(2n + 1) {
+    clear: both; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .abc_row > .abc:nth-child(3n + 1) {
+    clear: both; } }
+
+@media (min-width: 992px) {
+  .abc_row > .abc:nth-child(4n + 1) {
+    clear: both; } }
+
+/*# sourceMappingURL=style.css.map */

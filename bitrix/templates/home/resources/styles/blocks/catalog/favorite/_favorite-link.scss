@@ -1,0 +1,23 @@
+.favorite-link {
+  @extend .compare-link;
+  // cursor: pointer;
+
+  &__link {
+    @extend .compare-link__link;
+    // font-weight: normal;
+  }
+
+  &__text {
+    @extend .compare-link__text;
+    // @extend .anchor;
+    
+    // font-weight: normal;
+    // vertical-align: middle;
+  }
+  
+  &__icon {
+    @extend .compare-link__icon;
+    // color: $gray-light;
+  }
+
+}

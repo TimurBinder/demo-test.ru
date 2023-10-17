@@ -1,0 +1,39 @@
+h3.block-title {
+  margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin: 20px auto 10px;
+  & > a {
+    color: $text-color;
+  }
+  & > a:hover,
+  & > a:focus,
+  & > a:active {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+
+@media (max-width: $screen-sm-min) {
+  body h1 {
+    font-size: 30px;
+  },
+
+  body h2 {
+    font-size: 24px;
+  },
+
+  body h3,
+  body .catalog_sections__title,
+  body .catalog_sections__title > a,
+  body .l-section__name {
+    font-size: 20px;
+  }
+
+  body h4 {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,14 @@
+.js-buy {
+
+  &.is-incart &__add2cart,
+  & &__incart {
+    display: none !important;
+  }
+
+  &.is-incart &__incart {
+    @include button-variant(#fff, #282e3a, #282e3a);
+    
+    display: inline-block !important;
+  }
+
+}

@@ -1,0 +1,67 @@
+<?
+$aMenuLinks = Array(
+    Array(
+		"О компании", 
+		"#SITE_DIR#company", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"История", 
+		"history/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Лицензии / сертификаты", 
+		"license/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Награды", 
+		"awards/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Партнеры", 
+		"partners/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Сотрудники", 
+		"staff/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Отзывы", 
+		"reviews/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Вакансии", 
+		"vacancies/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Фотогалерея", 
+		"photogallery/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

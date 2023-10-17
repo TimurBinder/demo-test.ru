@@ -1,0 +1,116 @@
+@import '../../../../resources/styles/bootstrap-variables';
+@import '../../../../resources/styles/functions';
+@import '../../../../resources/styles/snippets';
+
+.compare {
+
+	&__top {
+		@extend %clearfix;
+
+		font-size: pxtoem($font-size-max);
+		margin-bottom: pxtoem(16px, $font-size-max);
+	}
+	
+	&__clear {
+		float: right;
+	}
+	
+
+	&__page {
+		position:relative;
+	}
+	
+	&__names {
+		font-weight: bold;
+		padding-top: 7px;
+		max-width: 50%;
+		
+		&.col {
+			padding-right: 0;
+		}
+		
+		table {
+			width: 100%;
+		}
+	}
+	
+	
+	&__items {
+		background: $body-bg;
+		// float: none;
+		overflow: auto;
+		padding-top: 7px;
+		
+		&.col {
+			padding-left: 0;
+		}
+	}
+	
+	.scroll-wrapper.scrollbar-rail > &__items.scroll-scrollx_visible {
+		top: 0;
+		margin-top: 0;
+	}
+	
+	&__items &__table thead td	{
+		// height:344px;
+	}
+	
+	
+	&__table {
+		table-layout: fixed;
+		
+		.product-item-container {
+			height: 100%;
+			margin: 0;
+		}
+
+		.product-item-price-container {
+			max-height: none;
+		}
+		
+		td {
+			text-align: center;
+	
+			& > iframe {
+				max-width: 100%;
+			}
+		}
+		
+		thead td {
+			text-align: left;
+		}
+	}
+
+	td,
+	th {
+		border: 1px solid transparent;
+		padding: $line-height-computed*0.45 $line-height-computed*0.4;
+		vertical-align: top;
+	}
+
+	thead td,
+	thead td {
+		// border-color: transparent;
+		// padding: 0;
+		
+		&.is-hover {
+			border-right-color: red;
+		}
+	}
+
+	&__table tbody td {
+		color: $gray-max;
+	}
+	
+	&__scroll {
+		height: $line-height-computed*2.5;
+		margin-bottom: $line-height-computed*0.3;
+		margin-top: $line-height-computed*-0.3;
+	}
+	
+	/*
+	&__group {
+		background: $border-color;
+	}
+	*/
+}

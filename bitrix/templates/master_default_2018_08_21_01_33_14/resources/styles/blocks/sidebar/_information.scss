@@ -1,0 +1,69 @@
+.b-sidebar-information {
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 20px 10px;
+  position: relative;
+  margin: 20px 0;
+
+  &__bookmark {
+    position: absolute;
+    background-color: #b01e21;
+    width: 30px;
+    height: 50px;
+    top: -1px;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 7px;
+  }
+
+  &__bookmark:before,
+  &__bookmark:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    border-style: solid;
+    border-color: #ffffff transparent #ffffff transparent;
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 1;
+  }
+
+  &__bookmark:before {
+    left: 0;
+    border-width: 0 0 5px 15px;
+  }
+
+  &__bookmark:after {
+    right: 0;
+    border-width: 0 15px 5px 0;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    padding-left: 40px;
+  }
+
+  &__text {
+    color: #676d72;
+    font-size: 12px;
+    margin: 40px 0;
+  }
+
+  &__link {
+    margin-top: 20px;
+    display: block;
+    text-decoration: underline;
+  }
+
+  &__link:hover,
+  &__link:active,
+  &__link:focus {
+    text-decoration: none;
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding: 20px 30px;
+  }
+}

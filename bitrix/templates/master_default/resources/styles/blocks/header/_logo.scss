@@ -1,0 +1,65 @@
+@import 'helpers';
+
+.b-head1-logo {
+
+  @include master-logo;
+
+  &__slogan {
+    display: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 3px;
+  }
+
+  @media (min-width: $screen-xs) {
+    text-align: center;
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    &__slogan {
+      display: block;
+    }
+  }
+  
+}
+
+.b-head2-logo {
+  @include master-logo;
+
+  &__name {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__slogan {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.2;
+    font-size: 16px;
+    margin-left: 15px;
+    display: none;
+  }
+
+  svg {
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    &__slogan {
+      display: inline-block;
+      max-width: 200px;
+    }
+  }
+}
+
+
+.master-logo {
+    &__sign {
+        fill: $brand-primary; 
+    }
+
+    &__m {
+        fill: #fff;
+    }
+}

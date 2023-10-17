@@ -1,0 +1,14 @@
+.anchor {
+  background: transparent;
+  border: none;
+  border-bottom: 1px dashed;
+  color: $link-color;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

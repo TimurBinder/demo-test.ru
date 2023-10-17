@@ -1,0 +1,74 @@
+@import '../../../../resources/styles/bootstrap-variables';
+
+.b-sidebar-subscribe {
+  margin-bottom: 25px;
+
+  &__title {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  &__note {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    position: relative;
+    padding: 10px 0;
+    color: $gray-max;
+  }
+
+  &__note-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: none;
+    color: $brand-primary;
+    padding-right: 40px;
+  }
+  &__note-icon .icon-svg {
+    font-size: 22px;
+  }
+
+  &__form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__form .input-group-btn {
+    position: relative;
+  }
+
+  &__form .icon-svg {
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    left: -1px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  &__form .icon-svg:hover + .btn {
+    color: #fff;
+    background-color: darken($brand-primary, 10%);
+    border-color: darken($brand-primary, 10%);
+  }
+
+  & .btn {
+    min-width: 40px;
+    height: 40px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    &__note-icon {
+      display: block;
+    }
+    &__note {
+      padding-left: 35px;
+    }
+  }
+}

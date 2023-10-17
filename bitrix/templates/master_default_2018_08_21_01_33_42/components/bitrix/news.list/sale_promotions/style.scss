@@ -1,0 +1,38 @@
+@import '../../../../resources/styles/bootstrap-variables';
+@import '../../../../resources/styles/blocks/news/list';
+
+.b-sale-promotions {
+  @include newslist;
+
+  margin-bottom: 30px;
+
+  &__title {
+    margin-top: 0;
+    color: $text-color;
+  }
+
+  &__title:hover,
+  &__title:focus,
+  &__title:active {
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  &__name {
+    display: block;
+  }
+
+  &__datainner {
+    height: 140px;
+  }
+
+  &__pic {
+    position: relative;
+  }
+
+  &__tag {
+    cursor: pointer;
+    top: auto;
+    bottom: 0;
+  }
+}

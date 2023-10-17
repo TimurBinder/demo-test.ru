@@ -1,0 +1,66 @@
+.b-location-confirm {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+  color: $text-color;
+  width: 290px;
+  padding: 18px 20px;
+  border: 1px solid $gray-lighter;
+  margin-top: 11px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+
+  &__triangle {
+    content: "";
+    position: absolute;
+    top: -9px;
+    width: 0;
+    left: 50%;
+    transform: translateX(-5px);
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $gray-lighter;
+
+    &:before {
+      content: "";
+      position: absolute;
+      height: 0;
+      border-left: 8px solid rgba(0, 0, 0, 0);
+      border-right: 8px solid rgba(0, 0, 0, 0);
+      border-bottom: 8px solid #fff;
+      top: 2px;
+      left: -8px;
+    }
+  }
+
+  &:after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    top: 100%;
+    background: #7aa104;
+    position: absolute;
+    left: -1px;
+    border-left: 1px solid #7aa104;
+    border-right: 1px solid #7aa104;
+    box-sizing: content-box;
+  }
+
+  &__your {
+    margin-bottom: 11px;
+  }
+
+  &__controls .btn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 3px;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  .b-location-confirm {
+    left: -15px;
+  }
+}

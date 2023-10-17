@@ -1,0 +1,51 @@
+@import '../../../../resources/styles/bootstrap-variables';
+
+div.search-popup {
+  margin-top: 1px;
+  padding-left: 0;
+  z-index: 999 !important;
+}
+
+div.search-popup-row,
+div.search-popup-row-active {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: $list-group-bg;
+  border-left: 1px solid $list-group-border;
+  border-right: 1px solid $list-group-border;
+  cursor: pointer;
+  padding: 12.5px 25px;
+
+  &:last-child:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    width: calc(100% + 2px);
+    height: 5px;
+    bottom: -5px;
+    left: -1px;
+    background: $brand-primary;
+  }
+}
+
+div.search-popup-row-active {
+  background: darken($brand-primary, 10%);
+  border-left-color: darken($brand-primary, 10%);
+  border-right-color: darken($brand-primary, 10%);
+  color: #fff;
+}
+
+div.search-popup-el-cnt,
+div.search-popup-el-name {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+div.search-popup-el-cnt {
+  text-align: right;
+  float: right;
+}

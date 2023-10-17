@@ -1,0 +1,184 @@
+#banner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.7);
+            font-family: Roboto, sans-serif;
+			z-index: 100000;
+        }
+        .banner {
+            position: relative;
+            width: 1100px;
+            height: 700px;
+            background: url('/img/bg_banner.png');
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .banner__header {
+            display: flex;
+            padding: 0.5rem 0;
+            align-items: center;
+        }
+        .banner__header > div {
+            width: 50%;
+        }
+        .banner__header h1 {
+            display: inline-block;
+            padding: 0 2rem;
+            font-size: 3rem;
+            color: #fff;
+            background: linear-gradient(to right, #fd5d8b, #daaab8);
+            margin: 0;
+        }
+        .banner__header h1:first-child {
+            margin-bottom: 0.4rem;
+        }
+        .banner__header h1 span {
+            font-size: 1.8rem;
+        }
+        .banner__header p {
+            text-align: center;
+            margin: 0;
+        }
+        .banner__header p:first-child {
+            font-size: 2rem;
+            color: #5b7fa3;
+        }
+        .banner__header p:last-child {
+            font-size: 4.5rem;
+            color: #fb5e8b;
+            font-weight: bold;
+        }
+        .banner__images {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0.9rem;
+        }
+        .banner__footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+			padding-left: 2rem;
+        }
+        .banner__footer ul {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0;
+			list-style-type: circle;
+			list-style-position: inside;
+        }
+        .banner__footer a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ed476b;
+            color: white;
+            font-size: 1.7rem;
+            text-decoration: none;
+            background: url("/img/button_bg.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 298px;
+            height: 74px;
+            border-radius: 16px;
+            margin-right: 4rem;
+        }
+
+
+        .banner-mobile {
+            position: relative;
+            width: 300px;
+            height: 450px;
+            background: #fff;
+            flex-direction: column;
+            display: none;
+        }
+        .banner-mobile__header {
+            width: 100%;
+            height: 76px;
+            background: linear-gradient(to right, #fd5d8b, #daaab8);
+            padding: 0 1rem;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner-mobile__header p {
+            color: white;
+            font-weight: bold;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+        .banner-mobile__header span {
+            font-size: 1.2rem;
+        }
+        .banner-mobile__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            padding: 0.3rem 0;
+            background: linear-gradient(to bottom, #fff 0%, #fff 45%, #5b7fa3 100%);
+        }
+        .banner-mobile__content__phone {
+            display: flex;
+            align-items: center;
+        }
+        .banner-mobile__content__phone span {
+            font-weight: bold;
+            color: #fb5e8b;
+            font-size: 3rem;
+            margin-left: 0.3rem;
+        }
+        .banner-mobile__content__button a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ed476b;
+            color: white;
+            font-size: 1.25rem;
+            text-decoration: none;
+            background: url("/img/button_bg.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 215px;
+            height: 44px;
+            border-radius: 16px;
+        }
+
+        .close-banner {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+        .close-banner svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        @media (max-width: 1100px) {
+            .banner {
+                display: none;
+            }
+            .banner-mobile {
+                display: flex;
+            }
+            .close-banner {
+                top: -50px;
+            }
+			.close-banner svg path {
+				fill: #fff;
+			}
+        }

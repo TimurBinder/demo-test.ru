@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <style>
+      .cls-loc-main {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-loc-main" d="M8,0a4,4,0,0,1,4,4V7H4V4A4,4,0,0,1,8,0ZM8,1a3,3,0,0,1,3,3V7H5V4A3,3,0,0,1,8,1Z"/>
+  <path class="cls-loc-main" d="M2,7H14v9H2V7ZM3,8H13v7H3V8Z"/>
+</svg>

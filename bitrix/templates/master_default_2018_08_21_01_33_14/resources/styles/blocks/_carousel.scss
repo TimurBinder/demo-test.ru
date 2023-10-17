@@ -1,0 +1,28 @@
+.carousel {
+
+  &__list {
+    @extend .clearfix;
+    
+    border-bottom: 4px solid #e6ebf2;
+    margin-bottom: $line-height-computed;
+    
+    &.owl-carousel  .feature__img {
+      display: inline-block;
+      max-width: 100%;
+      width: auto;
+    }
+  }
+
+  &__item {
+    float: left;
+  }
+  
+  &.owl-carousel &__item {
+    float: none;
+  }
+
+  &__nav {
+    @extend %owl-nav-ext;
+  }
+
+}

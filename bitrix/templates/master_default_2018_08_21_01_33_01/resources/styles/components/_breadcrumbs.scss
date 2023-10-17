@@ -1,0 +1,17 @@
+.breadcrumb {
+  font-size: $font-size-h6;
+  margin-bottom: 10px;
+
+  > li {
+    display: inline;
+
+    > a {
+      color: $gray-light;
+    }
+
+    + li:before {
+      content: $breadcrumb-separator;
+      //padding-right: 0;
+    }
+  }
+}

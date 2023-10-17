@@ -1,0 +1,14 @@
+%price-current {
+  font-weight: bold;
+  white-space: nowrap;
+  
+  &.discount {
+    color: #ff3600;
+  }
+}
+%price-old {
+  color: #636363;
+  white-space: nowrap;
+  text-decoration: line-through;
+}
+ 

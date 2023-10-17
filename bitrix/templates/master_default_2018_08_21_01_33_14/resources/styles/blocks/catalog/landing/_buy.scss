@@ -1,0 +1,21 @@
+.landing__buy {
+    
+    &__center {
+        text-align: center;
+    }
+
+    &__left {
+        text-align: left;
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    &__price {
+        //margin:0 0 10px;
+
+        .product-item-detail-price-current,
+        .product-item-detail-price-old {
+            font-size: pxtoem(18px);
+        }
+    }
+}

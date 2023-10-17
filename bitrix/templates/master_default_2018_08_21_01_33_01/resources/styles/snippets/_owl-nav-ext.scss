@@ -1,0 +1,29 @@
+%owl-nav-ext {
+  float: right;
+  margin-left: $line-height-computed;
+  
+  .icon-svg {
+    font-size: 26px;
+    color: $dark-color;
+  }
+
+  .prev,
+  .next {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .prev {
+    margin-right: 16px;
+  }
+  .next {
+    margin-left: 16px;
+  }
+  
+  &.disabled {
+    display: none;
+  }
+  
+  @media (min-width: $screen-sm-min) {
+    float: none;
+  }
+}

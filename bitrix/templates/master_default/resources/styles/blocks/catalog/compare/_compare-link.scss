@@ -1,0 +1,23 @@
+.compare-link {
+  cursor: pointer;
+
+  &__link {
+    font-weight: normal;
+    margin-bottom: 0;
+  
+    & > input {
+      display: none;
+    }
+  }
+  
+  &__text {
+    @extend .anchor;
+    
+    font-weight: normal;
+  }
+  
+  &__icon {
+    color: $gray-light;
+    font-size: 1.416667em;
+  }
+}

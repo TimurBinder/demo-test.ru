@@ -1,0 +1,115 @@
+
+.catalog_line {
+  display: block;
+  // margin: 0 0 $line-height-computed;
+  // background-color: #ffeded;
+  
+  &__body {
+    display: block;
+  }
+
+  &__title,
+  &__title > a {
+    // color: #000;
+    // font-size: pxtoem($font-size-base);
+    // font-weight: bold;
+  }
+  
+  &__title {
+    // font-size: pxtoem($font-size-small);
+    max-height: pxtoem($font-size-base * 1.2 * $line-height-base * 3);
+    margin-bottom: $font-size-base * 1.2 * $line-height-base / 2;
+    margin-top: 0;
+    overflow: hidden;
+  }
+  
+  &__descr {
+    display: none;
+  }
+  
+  &__sub {
+    @extend .list-inline;
+    
+    display: none;
+    font-size: pxtoem($font-size-base);
+  }
+  
+  &__sub ul {
+    @extend .list-inline;
+    
+    display: inline;
+  }
+  
+  &__pic {
+    display: block;
+    margin-bottom: $line-height-computed/2;
+    overflow: hidden;
+    padding-bottom: 66.66666%;
+    position: relative;
+  }
+
+  &__img {
+    left: 50%;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+  
+  & > .row {
+    display: block;
+  }
+
+}
+
+@media (min-width: $screen-sm-min){
+  .catalog_line {
+    &__title {
+      // font-size: pxtoem($font-size-base);
+      // height: auto;
+      // overflow: visible;
+    }
+    
+    &__descr {
+      color: $gray-max;
+      display: block;
+      height: pxtoem($font-size-base * $line-height-base * 2, $font-size-base); 
+      margin-bottom: $font-size-base * 1.2 * $line-height-base / 2; 
+      overflow: hidden;
+    }
+
+    &__sub {
+      display: block;
+      // height: $font-size-small * $line-height-base * 3;
+      overflow: hidden;
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .catalog_line {
+    padding: $line-height-computed*1.5 0;
+    // margin: 0 0 $line-height-computed;
+
+    &__pic {
+      height: auto;
+      margin: 0;
+      padding: 0 $line-height-computed/2 0 $line-height-computed;
+    }
+    
+    &__body {
+      .col-xs-12 > & {
+        margin-left: $grid-gutter-width/-2;
+      }
+    }
+
+    &__img {
+      left: auto;
+      position: static;
+      right: auto;
+      transform: none;
+    }
+  }
+}

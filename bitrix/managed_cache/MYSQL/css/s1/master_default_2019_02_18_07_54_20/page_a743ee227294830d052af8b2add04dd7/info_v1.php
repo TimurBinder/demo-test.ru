@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/bitrix/components/altasib/docslist/templates/.default/style.css" => "15511384922426",]; ?>

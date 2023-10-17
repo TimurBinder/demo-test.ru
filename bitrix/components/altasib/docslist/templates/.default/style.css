@@ -1,0 +1,117 @@
+.al-dl-docs-list-float{
+	width:73%;
+	float:left;
+}
+.al-dl-docs-list .al-dl-doc-section-name{
+	font-size:19px;
+	padding-bottom:9px;
+	margin-top:19px;
+}
+.al-dl-docs-list .al-dl-docs-item{
+	padding:15px 100px 18px 76px;
+	margin:0px;
+	font-size:12px;
+}
+
+.al-dl-docs-list .al-dl-docs-item .al-dl-doc-icon{
+	float:left;
+	position:relative;
+	z-index:1;
+	padding-top:1px;
+	margin-left:-57px;
+}
+.al-dl-docs-list .al-dl-docs-item .docs-date-time{
+	font-size:12px;
+	margin-bottom:3px;
+}
+.al-dl-docs-list .al-dl-docs-item .al-dl-doc-name{
+	padding:0px;
+	margin:0px 0px 3px 0px;
+	font-size:13px;
+	font-weight:bold;
+}
+.al-dl-docs-list .al-dl-doc-info{
+	float:right;
+	padding-top:2px;
+	position:relative;
+	text-align:center;
+	margin-right:-83px;
+	width:92px;
+}
+.al-dl-docs-list .al-dl-doc-info .al-dl-load-link{
+	padding:0px;
+	width:82px;
+	margin:0px auto 5px auto;
+}
+.al-dl-docs-list .al-dl-doc-info .al-dl-load-link a{
+	padding:7px 0px 10px 0px;
+	margin:0px;
+	display:block;
+	width:82px;
+	text-shadow:1px 1px 0px #fff;
+	color:#404040;
+	text-decoration:none;
+	text-align:center;
+	background:url(images/load_bg.png) right 0px no-repeat;
+}
+.al-dl-docs-list .al-dl-doc-info .al-dl-load-link a:hover{
+	background:url(images/load_bg.png) 0px 0px no-repeat;
+}
+.al-dl-docs-list .al-dl-clear{
+	padding:0px;
+	margin:0px;
+	clear:both;
+	height:1px;
+	overflow:hidden;
+}
+.al-dl-sect-list{
+	float:right;
+	width:25%;
+	font-size:12px;
+	background-color:#fff;
+}
+.al-dl-sect-list .al-dl-sec-title{
+	font-weight:bold;
+	font-size:14px;
+	padding:10px 0px 8px 16px;
+}
+.al-dl-sect-list ul{
+	padding:0px;
+	margin:0px;
+	list-style:none!important;
+}
+.al-dl-sect-list ul li{
+	padding:0 0 0 20px;
+	background:url(images/arr_bullet_sec.png) 8px 16px no-repeat;
+	margin:0px;
+	font-weight:bold;
+}
+.al-dl-sect-list ul li a:hover{
+	text-decoration:none;
+}
+.al-dl-sect-list ul li.al-dl-sect-sel{
+	background:url(images/arr_bullet_sec_sel.png) 8px 16px no-repeat;
+}
+.al-dl-sect-list ul li.dl_shown{
+	background:url(images/arr_bullet_sec_v.png) 8px 16px no-repeat;
+}
+.al-dl-sect-list ul li.dl_shown.al-dl-sect-sel{
+	background:url(images/arr_bullet_sec_sel_v.png) 8px 16px no-repeat;
+}
+.al-dl-sect-list a{
+	cursor:pointer;
+}
+.al-dl-sect-list ul li .al-dl-link-area{
+	padding:10px 20px;
+	margin-left:-20px;
+}
+.al-dl-sect-list ul li .open_menu{
+	cursor:pointer;
+	display:block;
+	height:10px;
+	margin-left:-15px;
+	margin-top:14px;
+	position:absolute;
+	width:10px;
+	z-index:100;
+}

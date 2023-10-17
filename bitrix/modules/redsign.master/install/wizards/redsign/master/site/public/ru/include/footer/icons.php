@@ -1,0 +1,1 @@
+<div class="b-footer-age-limit">18 +</div>

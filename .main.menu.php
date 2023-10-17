@@ -1,0 +1,60 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Главная", 
+		"./index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Застройщик", 
+		"/company/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Ввод в эксплуатацию", 
+		"/commissioning/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Ипотека", 
+		"/mortgage/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Инфраструктура и расположение", 
+		"/Infrastructure_and_location/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Планировки", 
+		"/Apartment_plan/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Выбрать квартиру", 
+		"/catalog/", 
+		Array(), 
+		Array("TYPE"=>"FULL", "IMAGE_STYLES"=>"right: 0px;", "IMAGE_LINK"=>"/catalog/"), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["colors.css"],"names":[],"mappings":"AAAA;EACE,0BAA0B;EAC1B,oBAAoB,EAAE","file":"colors.css","sourcesContent":[".bx-filter.bx-lite .bx-filter-parameters-box-title {\n  border: 1px solid #d7dbdd;\n  border-bottom: none; }\n"]}

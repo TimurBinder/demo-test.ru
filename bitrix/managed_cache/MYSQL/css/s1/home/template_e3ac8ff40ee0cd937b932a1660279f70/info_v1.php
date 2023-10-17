@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/bitrix/templates/home/assets/vendor/fancybox/jquery.fancybox.css" => "169718597718349","/css/main.css" => "169743311233176","/css/fix.css" => "1697433112451","/css/slick.css" => "16974331121776","/css/banner.css" => "16974331125186","/bitrix/templates/home/styles.css" => "169718586010026",]; ?>

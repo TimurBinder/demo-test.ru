@@ -1,0 +1,25 @@
+.landing__banner {
+    display:block;
+    background-position: center;
+    min-height:300px;
+    height:1px;
+
+    &__cover {
+        @media (max-width: $screen-sm-min) {
+            min-height: 300px !important;
+            background-size: cover;
+        }
+    }    
+
+    &__contain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        max-width: 600px;
+        text-align: center;
+    }
+
+}

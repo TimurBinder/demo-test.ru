@@ -1,0 +1,33 @@
+.header_info {
+	display: flex;
+	align-items: center;
+}
+.header_info .phone_text p {
+	display: flex;
+	align-items: center;
+}
+.nav_btn {
+	display: flex;
+	align-items: center;
+}
+.nav_btn p {
+	margin: 0; 
+}
+@media screen and (max-width: 420px) {
+	.header_info {
+		width: 100%;
+	}
+	.header_img_rose {
+		bottom: 0;
+		z-index: -1;
+	}
+	.container {
+		height: 80px;
+	}
+	.header_info::before {
+		top: 60px;
+	}
+	.header_info .phone_img {
+		margin-top: -8px;
+	}
+}

@@ -1,0 +1,139 @@
+@import '../../functions';
+@import '../../snippets';
+
+@mixin newslist {
+  &__title {
+    font-weight: bold;
+  }
+
+  &__item {
+    border: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+    position: relative;
+    background: $body-bg;
+    transition: box-shadow .3s;
+  }
+  &__item:hover {
+    box-shadow: 0 0 26px rgba(0, 0, 0, 0.13);
+  }
+
+  .owl-carousel .owl-item {
+    padding: 0 2px;
+  }
+
+  &__pic {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 200px;
+  }
+
+  &__pic img {
+    position: absolute;
+    left: -9999px;
+    right: -9999px;
+    top: -9999px;
+    bottom: -9999px;
+    margin: auto;
+    max-width: none;
+  }
+  .owl-carousel .owl-item img {
+    width: auto;
+  }
+
+  &__datainner {
+    height: 110px;
+    overflow: hidden;
+  }
+
+  &__date,
+  &__desc {
+    color: #676d72;
+    font-size: pxtoem(12px);
+  }
+
+  &__data {
+    padding: 15px 25px;
+  }
+
+  &__date {
+    height: 17px;
+    display: inline-block;
+  }
+
+  &__name {
+    font-weight: bold;
+    text-decoration: none;
+    color: $text-color;
+    padding: 5px 0;
+  }
+
+  &__name:hover,
+  &__active {
+    color: $text-color;
+  }
+
+  &__desc {
+    padding: 5px 0;
+  }
+
+  &__tag {
+    position: absolute;
+    z-index: 900;
+    color: #fff;
+    padding: 2px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 10px;
+    left: 20px;
+    top: 0;
+  }
+
+  &__tag:hover,
+  &__tag:active {
+    color: #fff;
+    text-decoration: none;
+  }
+  &__tag:hover:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__tools {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__nav,
+  &__showall {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__showall {
+    font-weight: bold;
+  }
+
+  &__nav {
+    @extend %owl-nav-ext;
+  }
+  
+  @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+    &__items.row > div {
+      width: 50%;
+      float: left;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    &__tools {
+      text-align: right;
+    }
+  }
+}

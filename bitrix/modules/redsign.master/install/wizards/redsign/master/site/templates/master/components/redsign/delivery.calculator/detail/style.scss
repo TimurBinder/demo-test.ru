@@ -1,0 +1,54 @@
+@import '../../../../resources/styles/bootstrap-variables';
+@import '../../../../resources/styles/functions';
+@import '../../../../resources/styles/snippets';
+
+
+.product-delivery {
+  border: 1px solid $border-color;
+  color: $gray-max;
+  font-size: pxtoem($font-size-max);
+  padding: pxtoem($line-height-computed/2);
+
+  &__block {
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+  }
+
+  &__pic {
+    min-width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    width: 10%;
+  }
+
+  &__icon {
+    background: url(images/delivery.png) no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 105px;
+    width: 114px;
+  }
+
+  &__title {
+    color: $gray-dark;
+    font-size: pxtoem(15px, $font-size-max);
+    font-weight: bold;
+    margin-bottom: pxtoem($line-height-computed/4);
+  }
+
+  &__body {
+    padding: 0 pxtoem($line-height-computed/4);;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    & > li {
+      margin: 0;
+    }
+  }
+}
+
+

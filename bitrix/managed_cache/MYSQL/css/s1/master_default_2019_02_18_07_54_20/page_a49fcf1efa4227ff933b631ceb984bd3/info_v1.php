@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/bitrix/templates/master_default_2019_02_18_07_54_20/components/redsign/news.archive/buttons/style.css" => "1550465660479","/bitrix/templates/master_default_2019_02_18_07_54_20/components/bitrix/news.list/list/style.css" => "15504656602302",]; ?>

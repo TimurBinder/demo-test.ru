@@ -1,0 +1,64 @@
+.b-sidebar-map {
+  display: block;
+  min-height: 170px;
+  margin: 20px 0;
+  background-size: auto;
+  background-position: center center;
+  position: relative;
+  box-shadow: inset 0px 0px 6px -2px $gray-light;
+
+  &__content {
+    display: block;
+    position: absolute;
+    background: #fff;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 80%;
+    max-width: 180px;
+    margin: auto;
+    transform: translateY(-50.30675%);
+    box-shadow: 0px 0px 10px -2px $gray-light;
+    padding: 35px 20px;
+    font-weight: bold;
+    color: $text-color;
+  }
+
+  &__icon {
+    position: absolute;
+    left: -20px;
+    width: 40px;
+    height: 80px;
+    background: #7aa104;
+    top: 50%;
+    transform: translate3d(0, -50%, 0px);
+    text-align: center;
+    transition: background .3s;
+  }
+
+  &__icon .icon-svg {
+    color: #fff;
+    font-size: 30px;
+    top: 25px;
+    position: relative;
+    margin: auto;
+  }
+
+  &__icon {
+    display: none;
+  }
+
+  &:hover &__icon {
+    background: darken($brand-primary, 10%);
+  }
+
+  @media (min-width: $screen-md-min) {
+    &__content {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    &__icon {
+      display: block;
+    }
+  }
+}

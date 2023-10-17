@@ -1,0 +1,32 @@
+ol {
+
+  li {
+    list-style: none;
+    counter-increment: list;
+    position: relative;
+  }
+
+  li:after {
+    content: counter(list);
+    position: absolute;
+    color: $brand-primary;
+    left: -16px;
+  }
+
+  &.list-unstyled > li:after,
+  &.breadcrumb > li:after {
+    content: "";
+  }
+}
+
+ul, ol {
+  li {
+    margin-bottom: 5px;
+  }
+
+  &.list-unstyled li,
+  &.navbar-nav li,
+  &.catalog_line__sub {
+    margin-bottom: 0;
+  }
+}

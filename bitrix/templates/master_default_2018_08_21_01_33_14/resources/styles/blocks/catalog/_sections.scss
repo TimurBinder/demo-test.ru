@@ -1,0 +1,51 @@
+.catalog_sections {
+  margin-bottom: $line-height-computed;
+
+  &__title,
+  &__title > a {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  &__descr {
+    margin-bottom: $line-height-computed*2;
+  }
+  
+  &__list {
+    
+    &,
+    &-banners,
+    &-line {
+      @extend .list-unstyled;
+    
+      margin-bottom: 0;
+    }
+    
+    &-banners {
+      margin-left: -2px;
+      margin-right: -2px;
+      
+      & > .mini_banner {
+        padding: 2px;
+      }
+    }
+    
+    &-line {
+      margin-left: -8px;
+      margin-right: -8px;
+      
+      & > .col {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+    }
+  }
+
+  
+  @media (min-width: $screen-sm-min) {
+  
+    &-line &__list > .col:nth-child(2n+1) {
+      clear: left;
+    }
+  }
+}

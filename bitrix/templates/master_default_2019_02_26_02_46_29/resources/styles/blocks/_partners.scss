@@ -1,0 +1,93 @@
+.partner {
+  border: 1px solid #d7dbdd;
+  padding: $line-height-computed/2;
+  margin-bottom: $line-height-computed;
+  text-align: center;
+  transition: box-shadow .3s;
+    
+  &:hover {
+    box-shadow: 0 0 26px rgba(0, 0, 0, 0.13);
+  }
+  
+  &__pic {
+    display: block;
+    padding-top: 82%;
+    margin: $line-height-computed/-2 $line-height-computed/-2 $line-height-computed/2;
+    position: relative;
+    transition: all 300ms ease;
+  }
+  
+  &__img {
+    display: block;
+    position: absolute;
+    top:   0;
+    left:  0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity 300ms linear;
+    z-index: 110;
+  }
+  
+  &__name {
+    color: #000;
+    font-weight: bold;
+    height: $line-height-computed;
+    margin: $line-height-computed/2 0;
+    overflow: hidden;
+  }
+  
+  &__name > a {
+    color: #000;
+  }
+  
+
+  &__description,
+  &__props {
+    $line-height-current: $font-size-small * $line-height-base;
+
+    color: $gray-max;
+    font-size: $font-size-small;
+    height: $line-height-current * 3;
+    margin-bottom: 0 auto $line-height-computed;
+    overflow: hidden;
+    
+     a {
+      color: $gray-max;
+    }
+  }
+  
+  &__description {
+    $line-height-current: $font-size-small * $line-height-base;
+    
+    @extend .text_fade;
+
+    &:after {
+      top: $line-height-current * 2;  
+    }
+  }
+  
+  &__head {
+    margin-bottom: $line-height-computed/2;
+    padding-bottom: $line-height-computed/2 + 4px;
+    position: relative;
+    
+    &:after {
+      background-color: $brand-primary;
+      border-radius: 2px;
+      bottom: 0;
+      content: '';
+      display: block;
+      height: 4px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      width: 30%;
+    }
+  }
+}

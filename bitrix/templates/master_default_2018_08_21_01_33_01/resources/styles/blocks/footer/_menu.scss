@@ -1,0 +1,28 @@
+.b-footer-menu {
+  @extend .list-unstyled;
+
+  &__item &__link {
+    margin-bottom: 3px;
+  }
+
+  &__link {
+    font-size: pxtoem($font-size-small);
+    display: inline-block;
+  }
+
+  &__item.is-mark &__link {
+    margin: 7px 0;
+  }
+
+  &__item.is-mark:first-child &__link {
+    margin-top: 0;
+  }
+  &__item.is-mark {
+    //margin-bottom: 14px;
+  }
+
+  &__item.is-mark &__link {
+    font-weight: bold;
+    font-size: pxtoem($font-size-base);
+  }
+}

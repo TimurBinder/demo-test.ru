@@ -1,0 +1,57 @@
+.l-section {
+  // padding: $line-height-computed 0;
+  margin-bottom: 0;
+
+  &__head {
+    // margin: 0 auto $line-height-computed;
+    margin: 0 auto floor($line-height-computed*1.56522);
+  }
+
+  &__name {
+    //font-size: $font-size-h3;
+    font-weight: bold;
+    margin-top: 0;
+    //margin: 0 auto $line-height-computed;
+  }
+
+  &__description {
+    width: 100%;
+  }
+
+  &-dark {
+    @extend .l-section;
+
+    background-color: #f7f7f7;
+    border-top: 1px solid #dbdbdd;
+    border-bottom: 1px solid #dbdbdd;
+  }
+
+  .section-footer {
+    margin-top: floor($line-height-computed*0.60870);
+
+    &__more-button .icon-svg {
+      fill: $brand-primary;
+      width: 28px;
+      height: 28px;
+      margin-left: 20px;
+    }
+  	 &__more-button .btn {
+      margin-top: 24px;
+  	  padding:12px 22px 9px;
+  	}
+  }
+
+  &--padding {
+    padding: floor($line-height-computed*2.47827/2) 0 floor($line-height-computed*2.60870/2);
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+
+  .l-section {
+    &--padding {
+      padding: floor($line-height-computed*2.47827) 0 floor($line-height-computed*2.60870);
+    }
+  }
+
+}

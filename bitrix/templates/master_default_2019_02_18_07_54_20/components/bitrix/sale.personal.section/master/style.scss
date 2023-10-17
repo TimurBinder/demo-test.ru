@@ -1,0 +1,438 @@
+@import '../../../../resources/styles/bootstrap-variables';
+@import '../../../../resources/styles/functions';
+@import '../../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/mixins';
+
+.sale-personal-section-index-block {
+  opacity: 0.8;
+  padding: 0;
+  margin: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-size: cover;
+  border-radius: 3px;
+  height: 87%;
+  display: flex;
+  justify-content: space-around;
+  background-color: $brand-primary;
+}
+
+.sale-personal-section-index-block:hover {
+  opacity: 1;
+}
+
+.sale-personal-section-index-block-link,
+.sale-personal-section-index-block-link:active,
+.sale-personal-section-index-block-link:focus,
+.sale-personal-section-index-block-link:hover,
+.sale-personal-section-index-block-link:visited {
+  text-decoration: none;
+  display: block;
+  padding: 25px 15px;
+  color: #fff;
+}
+
+.sale-personal-section-index-block-link {
+  color: #fff;
+}
+
+.sale-personal-section-index-block-ico {
+  font-size: 64px;
+}
+
+.sale-personal-section-index-block-name {
+  font-size: 16px;
+}
+
+.sale-personal-section-account-sub-header {
+  margin-top: 40px;
+}
+
+.sale-personal-section-row-flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+body {
+  .sale-order-title {
+    color: $text-color;
+  }
+
+  .sale-order-description,
+  .sale-order-detail-about-order-inner-container-details-title,
+  .sale-order-detail-about-order-inner-container-list-item,
+  .sale-order-detail-about-order-inner-container-list-item-element,
+  .sale-order-detail-about-order-inner-container-list-item-link,
+  .sale-order-detail-about-order-inner-container-name-detail,
+  .sale-order-detail-about-order-inner-container-name-titile,
+  .sale-order-detail-about-order-inner-container-price-detai,
+  .sale-order-detail-about-order-inner-container-price-title,
+  .sale-order-detail-about-order-inner-container-repeat-button,
+  .sale-order-detail-about-order-inner-container-repeat-cancel,
+  .sale-order-detail-about-order-inner-container-status-detail,
+  .sale-order-detail-about-order-inner-container-status-title,
+  .sale-order-detail-about-order-title-element,
+  .sale-order-detail-general-item,
+  .sale-order-detail-order-item-color,
+  .sale-order-detail-order-item-size,
+  .sale-order-detail-payment-options-info-order-number,
+  .sale-order-detail-payment-options-info-total-price,
+  .sale-order-detail-payment-options-methods-button-element-new-window,
+  .sale-order-detail-payment-options-methods-info-change-link,
+  .sale-order-detail-payment-options-methods-info-title,
+  .sale-order-detail-payment-options-methods-info-title-status-alert,
+  .sale-order-detail-payment-options-methods-info-title-status-restricted,
+  .sale-order-detail-payment-options-methods-info-title-status-success,
+  .sale-order-detail-payment-options-methods-info-total-check,
+  .sale-order-detail-payment-options-methods-info-total-price,
+  .sale-order-detail-payment-options-methods-shipment-list,
+  .sale-order-detail-payment-options-methods-shipment-list-item-title,
+  .sale-order-detail-payment-options-order-content-item-title,
+  .sale-order-detail-payment-options-order-content-title-element,
+  .sale-order-detail-payment-options-shipment-composition-item-title,
+  .sale-order-detail-payment-options-shipment-composition-map-title,
+  .sale-order-detail-payment-options-shipment-composition-title-element,
+  .sale-order-detail-payment-options-shipment-map-address-element,
+  .sale-order-detail-payment-options-shipment-map-address-title,
+  .sale-order-detail-payment-options-title-element,
+  .sale-order-detail-status-restricted-message,
+  .sale-order-detail-title-element,
+  .sale-order-detail-total-payment-list-left-item,
+  .sale-order-detail-total-payment-list-right-item,
+  .sale-order-list-about-link,
+  .sale-order-list-about-link,
+  .sale-order-list-accomplished-date,
+  .sale-order-list-accomplished-date-number,
+  .sale-order-list-accomplished-title,
+  .sale-order-list-button,
+  .sale-order-list-cancel-link,
+  .sale-order-list-change-payment,
+  .sale-order-list-change-payment,
+  .sale-order-list-inner-title-line-item,
+  .sale-order-list-payment-check,
+  .sale-order-list-payment-price,
+  .sale-order-list-payment-title,
+  .sale-order-list-repeat-link,
+  .sale-order-list-shipment,
+  .sale-order-list-shipment-button,
+  .sale-order-list-shipment-status-block,
+  .sale-order-list-shipment-title,
+  .sale-order-list-status-alert,
+  .sale-order-list-status-restricted,
+  .sale-order-list-status-restricted-message,
+  .sale-order-list-status-success,
+  .sale-order-list-title,
+  .sale-order-title {
+    font-family: $font-family-sans-serif;
+  }
+
+  .sale-order-detail-order-item-td-title,
+  .sale-order-detail-order-item-td-text,
+  .sale-order-list-payment-title,
+  .sale-order-list-shipment-title {
+    font-size: pxtoem(14px);
+  }
+
+  .bx-price-old,
+  .bx_order_list .bx_big.bx_bt_button_type_2,
+  .bx_order_list .bx_medium.bx_bt_button_type_2,
+  .bx_order_list .bx_order_list_table tbody tr td,
+  .bx_order_list .bx_order_list_table_order tbody tr td,
+  .bx_order_list .bx_ordercart_order_sum tr td,
+  .sale-order-detail-about-order-inner-container-details-title,
+  .sale-order-detail-about-order-inner-container-list-item,
+  .sale-order-detail-about-order-inner-container-name-titile,
+  .sale-order-detail-about-order-inner-container-price-title,
+  .sale-order-detail-about-order-inner-container-repeat-cancel,
+  .sale-order-detail-about-order-inner-container-status-title,
+  .sale-order-detail-order-item-color,
+  .sale-order-detail-order-item-size,
+  .sale-order-detail-payment-options-methods-button-element,
+  .sale-order-detail-payment-options-methods-button-element-new-window,
+  .sale-order-detail-payment-options-methods-info-change-link,
+  .sale-order-detail-payment-options-methods-info-total-check,
+  .sale-order-detail-payment-options-methods-info-total-price,
+  .sale-order-detail-payment-options-methods-shipment-list,
+  .sale-order-detail-payment-options-order-content-item-title,
+  .sale-order-detail-payment-options-shipment-button-element,
+  .sale-order-detail-payment-options-shipment-composition-item-title,
+  .sale-order-detail-order-item-td-title,
+  .sale-order-detail-order-item-td-text {
+    font-size: pxtoem(12px);
+  }
+
+
+  .sale-order-detail-about-order-inner-container-list-item-link,
+  .sale-order-history-link,
+  .sale-order-link,
+  .sale-order-list-change-payment,
+  .sale-order-list-shipment-button {
+    color: $brand-primary;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .sale-order-list-inner-title-line {
+    padding: 25px 0 14px 0;
+  }
+
+  .btn.sale-account-pay-button,
+  .sale-acountpay-fixedpay-list .sale-acountpay-fixedpay-item,
+  .sale-order-detail-about-order-inner-container-repeat-button,
+  .sale-order-detail-payment-options-methods-button-element,
+  .sale-order-detail-payment-options-methods-button-element-new-window,
+  .sale-order-list-button,
+  .main-profile-submit,
+  .sale-personal-profile-btn-block .btn:first-of-type {
+    background-color: $btn-primary-bg;
+    font-weight: $btn-font-weight;
+    color: $btn-primary-color;
+    transition: 0s;
+    border-radius: $btn-border-radius-base;
+
+    &.active-button:hover,
+    &:active,
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      background-color: darken($brand-primary, 10%);
+      transition: 0s;
+    }
+  }
+
+  .sale-order-list-about-link,
+  .sale-order-list-repeat-link,
+  .sale-order-list-cancel-link {
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 2px solid  #d8dcdf;
+    color: $text-color;
+    text-decoration: none;
+    @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
+
+    &:hover,
+    &:active,
+    &.active,
+    &:focus,
+    &.focus,
+    &:active:hover,
+    &:active:focus {
+      border-color: darken($brand-primary, 10%);
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+
+  .sale-order-detail-about-order-inner-container-list-item-link,
+  .sale-order-list-about-link {
+    font-weight: normal;
+  }
+
+  .sale-order-detail-about-order-inner-container-name-read-less:after,
+  .sale-order-detail-about-order-inner-container-name-read-more:after,
+  .sale-order-detail-hide-link:after,
+  .sale-order-detail-payment-options-methods-info-change-link:after,
+  .sale-order-detail-show-link:after,
+  .sale-order-list-repeat-link:before {
+    content: initial;
+  }
+
+  .sale-order-detail-about-order-title,
+  .sale-order-detail-general-head,
+  .sale-order-detail-payment-options-order-content-title,
+  .sale-order-detail-payment-options-order-content-title,
+  .sale-order-detail-payment-options-shipment-composition-title,
+  .sale-order-detail-payment-options-title,
+  .sale-order-list-title-container {
+    background-color: #f7f7f8;
+    padding: 10px 0 10px 15px;
+  }
+
+  .sale-acountpay-pp-company.bx-selected .sale-acountpay-pp-company-graf-container,
+  .sale-order-detail-general,
+  .sale-order-list-inner-container {
+    border-color: #d7dbdd;
+  }
+
+  .sale-order-list-title-container {
+    border: 1px solid #d7dbdd;
+    border-bottom: 0;
+  }
+
+  .sale-order-payment-change-pp-company:hover .sale-order-payment-change-pp-company-graf-container {
+    border-color: $brand-primary;
+  }
+
+  .sale-order-detail-general-item,
+  .sale-order-list-title-container .sale-order-list-title {
+    color: $text-color;
+  }
+
+  .sale-order-detail-about-order-inner-container-name-read-less,
+  .sale-order-detail-about-order-inner-container-name-read-more,
+  .sale-order-detail-hide-link,
+  .sale-order-detail-payment-options-methods-info-change-link,
+  .sale-order-detail-show-link,
+  .sale-order-list-cancel-payment {
+    border-bottom-color: $brand-primary;
+  }
+
+  .sale-order-detail-about-order,
+  .sale-order-detail-payment-options,
+  .sale-order-detail-payment-options-order-content {
+    margin-top: 0;
+  }
+
+  .sale-order-detail-about-order-title {
+    background: transparent;
+  }
+
+  .sale-order-detail-about-order-inner-container,
+  .sale-order-detail-order-item-imgcontainer,
+  .sale-order-detail-order-section,
+  .sale-order-detail-payment-options-inner-container,
+  div.sale-order-detail-payment-options-methods,
+  div.sale-order-detail-payment-options-shipment {
+    border: 0;
+  }
+
+  .sale-order-detail-order-item-td {
+    padding-top: 6px;
+    vertical-align: middle;
+  }
+
+  .sale-order-detail-order-item-td .sale-order-detail-order-item-block {
+    padding-left: 15px;
+  }
+
+  .sale-order-detail-order-item-title > a {
+    font-weight: normal;
+    color: $text-color;
+  }
+
+  .sale-order-detail-order-item-td {
+    border-top: 0;
+    border-bottom: 1px solid #f7f7f8;
+  }
+
+  .sale-order-detail-order-item-block {
+    display: flex;
+    align-items: center;
+
+    .sale-order-detail-order-item-title {
+      padding: 0;
+    }
+  }
+
+  .sale-order-list-status-alert,
+  .sale-order-list-shipment-status-block,
+  .sale-order-detail-payment-options-methods-info-title-status-alert,
+  .sale-order-list-status-success,
+  .sale-order-detail-payment-options-methods-info-title-status-success {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: pxtoem(12px);
+    font-weight: bold;
+    line-height: 1;
+    color: $label-color;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    border: 0px;
+  }
+
+  .sale-order-list-status-alert,
+  .sale-order-detail-payment-options-methods-info-title-status-alert {
+    background-color: $label-danger-bg;
+  }
+
+  .sale-order-list-shipment-status-block {
+    background-color: $label-default-bg;
+  }
+
+  .sale-order-list-status-success,
+  .sale-order-detail-payment-options-methods-info-title-status-success {
+    background-color: $label-success-bg;
+  }
+
+  .sale-personal-profile-list-arrow-up:hover,
+  .sale-personal-profile-list-arrow-down:hover {
+    color: $brand-primary;
+    transition: 0s;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .sale-personal-profile-list-change-button {
+    border-bottom: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border-bottom: 0;
+    }
+  }
+
+  .sale-personal-profile-list-arrow-up {
+    margin-left: 4px;
+  }
+
+  .sale-personal-profile-list-arrow-up .fa-chevron-up:before {
+    content: "\f106";
+  }
+
+  .sale-personal-profile-list-arrow-down .fa-chevron-down:before {
+    content: "\f107";
+  }
+
+  .sale-order-history-link {
+    display: block;
+  }
+
+  .sale-order-list-inner-row:last-child {
+    max-width: 100%;
+  }
+
+  .sale-order-payment-change-inner-row-body {
+    padding: 0 15px;
+  }
+
+  .sale-order-detail-back-to-list-link-down {
+    float: left;
+    margin-top: 15px;
+    padding: 0;
+  }
+}
+@media (max-width: 992px) {
+  body {
+    .sale-personal-section-index-block {
+      height: auto;
+      margin: 8px 0;
+    }
+
+    div.sale-order-list-repeat-container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .sale-order-list-inner-row:last-child  a {
+      margin: 2px 0;
+      width: 100%;
+    }
+    .sale-order-list-inner-row:last-child {
+      max-width: none;
+    }
+  }
+
+}

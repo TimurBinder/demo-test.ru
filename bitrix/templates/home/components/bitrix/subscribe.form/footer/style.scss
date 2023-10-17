@@ -1,0 +1,74 @@
+@import '../../../../resources/styles/bootstrap-variables';
+
+.b-footer-subscribe {
+
+  &__title {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  &__note {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    position: relative;
+  }
+
+  &__note-icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: none;
+  }
+  &__note-icon .icon-svg {
+    font-size: 22px;
+  }
+
+  &__form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__form .input-group-btn {
+    position: relative;
+  }
+
+  &__form .input-group .form-control:focus {
+    box-shadow: none;
+    border-color: transparent;
+    z-index: 2;
+  }
+
+  &__form .icon-svg {
+    position: absolute;
+    z-index: 3;
+    font-size: 20px;
+    left: -1px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    cursor: pointer;
+  }
+
+  &__form .icon-svg:hover + .btn {
+    color: #fff;
+    background-color: darken($dark-color, 10%);
+    border-color: darken($dark-color, 10%);
+  }
+
+  & .btn {
+    min-width: 40px;
+    height: 40px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    &__note-icon {
+      display: block;
+    }
+    &__note {
+      padding-left: 35px;
+    }
+  }
+}

@@ -1,0 +1,2 @@
+<?
+$MESS['REDSIGN.MASTER.HOMEPAGE.TYPE5'] = 'Вариант';

@@ -1,0 +1,280 @@
+@import 'bootstrap/mixins';
+@import 'helpers';
+@import '.../../snippets/head-shades';
+
+.l-head2 {
+  margin-bottom: 20px;
+  position: relative;
+  line-height: $line-height-base;
+
+  &__menu {
+    position: relative;
+    z-index: $zindex-navbar;
+  }
+
+  &__head {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    position: relative;
+    z-index: 2;
+    font-size: $font-size-base;
+  }
+
+  &__menu .container {
+    width: 100%;
+    .b-horizontal-menu__item.is-full-menu > .b-horizontal-menu__full-items {
+      width: 100%;
+      left: 1px;
+    }
+    .b-horizontal-menu__item.is-full-menu > .b-horizontal-menu__full-items.is-right {
+      width: 100%;
+      left: auto;
+      right: -1px;
+    }
+  }
+
+  &__background-inner {
+    height: 300px;
+    position: relative;
+  }
+
+  &__background {
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  &__info {
+    color: #fff;
+    position: absolute;
+    z-index: 888;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    max-width: 310px;
+    margin: auto;
+    transform: translateY(-50%);
+  }
+
+  @include head-shade();
+  @include master-set-search-width();
+
+  @media (min-width: $screen-xs-min) {
+    &__cart {
+      display: none;
+    }
+    &__shade {
+      width: 50%;
+    }
+  }
+
+  @media (min-width: $screen-sm-min) {
+    &__menu {
+      @include container-fixed();
+      width: $container-sm;
+    }
+
+    .b-horizontal-menu .navbar-collapse {
+      padding-left: 0;
+    }
+
+    &__background-inner {
+      position: static;
+      height: 320px;
+    }
+
+    &__info {
+      transform: translateY(-15%);
+      left: 25%;
+      right: auto;
+      text-align: left;
+    }
+
+    &--dark {
+      & .navbar-default {
+        background: $dark-color;
+        border-color: $dark-color;
+      }
+    }
+
+    &--light {
+      & .navbar-default {
+        background: transparent;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: $dropdown-border;
+        border-bottom-color: $dropdown-border;
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+
+      & .b-head-search__icon .icon-svg,
+      & .navbar-default .navbar-nav > li > a {
+        color: $text-color;
+      }
+
+      & .navbar-default .navbar-nav > li > a:hover {
+        color: #fff;
+      }
+
+      & .b-head-search__icon:hover .icon-svg {
+        color: #fff;
+      }
+      .b-horizontal-menu__nav > li > a,
+      .b-horizontal-menu__more > li > a {
+        top: -1px;
+      }
+
+    }
+
+    &--shade-colors,
+    &--shade-dark,
+    &--shade-light {
+      .b-horizontal-menu {
+        min-height: 57px;
+      }
+
+      .l-head2__head {
+        margin-top: 25px;
+      }
+
+      .b-horizontal-menu {
+        background: transparent;
+        border-color: transparent;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-left-color: transparent;
+        border-right-color: transparent;
+      }
+
+      .b-horizontal-menu__more-btn,
+      .b-horizontal-menu__navbar .b-horizontal-menu__nav > li > a {
+        top: -1px;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+      }
+
+      .b-horizontal-menu__more > .open > .b-horizontal-menu__more-btn,
+      .b-horizontal-menu__more-btn:hover,
+      .b-horizontal-menu__navbar .b-horizontal-menu__nav > li > a:hover,
+      .b-horizontal-menu__navbar .b-horizontal-menu__nav > li.open > a,
+      .b-horizontal-menu__navbar .b-horizontal-menu__nav > li.open > a:hover {
+        border-color: darken($brand-primary, 10%);
+      }
+
+      .b-horizontal-menu__nav > li > .dropdown-menu {
+        margin-top: -1px;
+      }
+
+      .b-head-search__icon {
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+
+      .b-head-search__form {
+        height: 57px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+      }
+
+      .b-head-icon--fill {
+        background: transparent;
+        border-color: transparent;
+      }
+    }
+
+    &--shade-colors,
+    &--shade-dark {
+      .l-head2__head {
+        border-top: 1px solid #fff;
+      }
+      .b-horizontal-menu {
+        border-top-color: #fff;
+        border-bottom-color: #fff;
+      }
+      .b-head2-logo__name,
+      .b-head2-logo__name:hover,
+      .b-head2-logo__slogan,
+      .b-head-phone__text {
+        color: #fff;
+      }
+      .b-head-ask__text {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0);
+        border-color: #fff;
+      }
+
+      .b-head-ask__text:hover {
+        background-color: darken($brand-primary, 10%);
+        border-color: darken($brand-primary, 10%);
+      }
+    }
+
+    &--shade-light {
+      .l-head2__head {
+        border-top: 1px solid $gray-lighter;
+      }
+      .b-horizontal-menu {
+        border-top-color: $gray-lighter;
+        border-bottom-color: $gray-lighter;
+      }
+      .b-head-icon--fill .icon-svg {
+        color: $brand-primary;
+      }
+      .b-head-icon--fill:hover .icon-svg {
+        color: #fff;
+      }
+      .b-horizontal-menu__nav > li > a {
+        color: $text-color;
+      }
+      .b-head-search__icon .icon-svg {
+        color: $text-color;
+      }
+      .b-head-search__icon:hover .icon-svg {
+        color: #fff;
+      }
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    &__contacts {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__contacts > * {
+      margin-left: 25px;
+    }
+
+    &__menu {
+      width: $container-md;
+    }
+
+    &__background-inner {
+        height: 420px;
+    }
+
+    &__info {
+      transform: translateY(-5%);
+    }
+  }
+  @media (min-width: $screen-lg-min) {
+    &__menu {
+      width: $container-lg;
+    }
+  }
+
+}

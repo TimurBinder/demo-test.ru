@@ -1,0 +1,90 @@
+.panel-group {
+  .panel + .panel {
+    margin-top: -1px;
+  }
+}
+
+.panel-heading {
+  padding: 0;
+}
+
+.panel-title {
+  font-size: $font-size-base;
+
+  > a {
+    display: block;
+    padding: $panel-heading-padding;
+  }
+}
+
+.panel-master {
+  @include panel-variant(transparent, $panel-default-text, $panel-default-heading-bg, $panel-default-border);
+
+  &:last-child .panel-collapse {
+    border-bottom: 1px solid $panel-default-border;
+  }
+
+  .panel-title > a {
+    transition: .15s;
+    margin-top: -2px;
+    border: 1px solid $panel-default-border;
+    position: relative;
+  }
+  .panel-title > a:hover {
+    background: darken($brand-primary, 10%);
+    border-color: darken($brand-primary, 10%);
+    color: #fff;
+    text-decoration: none;
+  }
+  .panel-title > a:focus,
+  .panel-title > a:active {
+    text-decoration: none;
+  }
+  .panel-title > a:not(.collapsed) {
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+    color: #fff;
+  }
+
+  .panel-title > a:before {
+    position: absolute;
+    @include fa-icon();
+    content: '\f107';
+    right: 0;
+    padding: 0 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+  }
+  .panel-title > a.collapsed:before {
+    transform: translateY(-50%) rotate(0deg);
+  }
+
+  .panel-body {
+    border-left: 1px solid $panel-default-border;
+    border-right: 1px solid $panel-default-border;
+  }
+
+  .panel-title > a .panel-title-right {
+    display: block;
+  }
+
+  @media (min-width: $screen-md-min) {
+    .panel-title > a {
+      @include clearfix;
+    }
+
+    .panel-title > a .panel-title-left {
+      float: left;
+    }
+    .panel-title > a .panel-title-right {
+      float: right;
+      display: inline;
+      padding-right: 25px;
+      vertical-align: middle;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

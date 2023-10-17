@@ -1,0 +1,23 @@
+.b-subscription .field-wrap {
+  min-height: 45px;
+  margin-top: 0;
+  margin-bottom: 15px; }
+
+.b-subscription label {
+  font-weight: 400; }
+
+.b-subscription__btns {
+  margin-top: 15px; }
+
+.b-subscription__padleft {
+  margin-top: 12px;
+  padding-left: 30px; }
+
+.b-subscription__rubric {
+  margin-bottom: 20px; }
+
+.b-subscription .required {
+  color: #d9534f;
+  font-weight: 400; }
+
+/*# sourceMappingURL=style.css.map */

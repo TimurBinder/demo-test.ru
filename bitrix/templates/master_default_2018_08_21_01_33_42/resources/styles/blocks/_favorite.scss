@@ -1,0 +1,14 @@
+.favorite {
+  cursor: pointer;
+
+  &__text {
+    vertical-align: middle;
+    margin-right: $line-height-computed/2;
+  }
+  
+  &__icon {
+    color: #000;
+    font-size: 1.416667em;
+    
+  }
+}

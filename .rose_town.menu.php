@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Застройщик", 
+		"#contacts", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Ввод в эксплуатацию", 
+		"#commissioning", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Стоимость", 
+		"#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Ипотека", 
+		"#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Инфраструктура и расположение", 
+		"#location", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Планировки", 
+		"#plan", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/bitrix/templates/master_default_2019_02_18_07_54_20/components/redsign/lightbasket.basket/master/script.js" => "1550465660800",]; ?>

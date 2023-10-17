@@ -1,0 +1,37 @@
+.b-cart-head {
+
+
+  .is-loading & .icon-svg-cart {
+    display: none;
+  }
+
+  &__loader {
+    display: none;
+
+    .is-loading & {
+      display: block;
+    }
+  }
+
+  &--popup  {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  &--popup &__icon .icon-svg {
+    font-size: 30px;
+    color: $brand-primary;
+  }
+
+  &--popup &__title {
+    margin: 0 20px;
+    flex: 1 0 auto;
+  }
+
+  &--popup &__icon,
+  &--popup &__close {
+    flex: 0 0 auto;
+  }
+
+}

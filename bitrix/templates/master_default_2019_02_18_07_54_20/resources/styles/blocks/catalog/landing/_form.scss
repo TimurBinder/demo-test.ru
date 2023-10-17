@@ -1,0 +1,48 @@
+.landing__form {
+    &-transparent {
+        .form-control,
+        .rsform__field-editor {
+            background-color:transparent;
+            ::-webkit-input-placeholder {color:#81807c;}
+            ::-moz-placeholder          {color:#81807c;}
+            :-moz-placeholder           {color:#81807c;}
+            :-ms-input-placeholder      {color:#81807c;}   
+            border-color: #81807c;       
+        }
+    }
+}
+.landing__shadow-form {
+    .landing__form-transparent {
+        .form-control,
+        .rsform__field-editor {
+            background-color:transparent;
+            color:#fff;
+            ::-webkit-input-placeholder {color:#81807c;}
+            ::-moz-placeholder          {color:#81807c;}
+            :-moz-placeholder           {color:#81807c;}
+            :-ms-input-placeholder      {color:#81807c;}            
+        }
+        &.rsform .form-control:active,
+        &.rsform .rsform__field-editor:active,
+        &.rsform .form-control:focus,
+        &.rsform .rsform__field-editor:focus {
+            border-color:#fff; 
+        }
+        &.rsform .field-wrap label,
+        .rsform__bottom-ps {
+            color:#fff;
+        }
+        .has-error .form-control,
+        .has-error .rsform__field-editor {
+            color: $state-danger-text;
+            ::-webkit-input-placeholder {color:$state-danger-text;}
+            ::-moz-placeholder          {color:$state-danger-text;}
+            :-moz-placeholder           {color:$state-danger-text;} 
+            :-ms-input-placeholder      {color:$state-danger-text;}   
+        }
+    }
+
+    .landing__title {
+        color:#fff;
+    }
+}

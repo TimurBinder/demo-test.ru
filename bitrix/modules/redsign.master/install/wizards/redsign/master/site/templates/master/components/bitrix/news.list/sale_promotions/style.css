@@ -1,0 +1,132 @@
+.b-sale-promotions__nav {
+  float: none;
+  margin-left: 23px; }
+  .b-sale-promotions__nav .icon-svg {
+    font-size: 26px;
+    color: #0b1226; }
+  .b-sale-promotions__nav .prev,
+  .b-sale-promotions__nav .next {
+    display: inline-block;
+    cursor: pointer; }
+  .b-sale-promotions__nav .prev {
+    margin-right: 16px; }
+  
+  .b-sale-promotions__nav .next {
+    margin-left: 16px; }
+  .disabled.b-sale-promotions__nav {
+    display: none; }
+  @media (min-width: 768px) {
+    .b-sale-promotions__nav {
+      float: right; } }
+
+.b-sale-promotions {
+  margin-bottom: 30px; }
+  .b-sale-promotions__title {
+    font-weight: bold; }
+  .b-sale-promotions__item {
+    border: 1px solid #e8e8e8;
+    margin-bottom: 11px;
+    position: relative;
+    background: #fff;
+    -webkit-transition: -webkit-box-shadow .3s;
+    transition: -webkit-box-shadow .3s;
+    -o-transition: box-shadow .3s;
+    transition: box-shadow .3s;
+    transition: box-shadow .3s, -webkit-box-shadow .3s; }
+    @media (min-width: 768px) {
+      .b-sale-promotions__item {
+        margin-bottom: 23px; } }
+  .b-sale-promotions__item:hover {
+    -webkit-box-shadow: 0 0 26px rgba(0, 0, 0, 0.13);
+            box-shadow: 0 0 26px rgba(0, 0, 0, 0.13); }
+  .b-sale-promotions__pic {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 200px; }
+  .b-sale-promotions__pic img {
+    position: absolute;
+    left: -9999px;
+    right: -9999px;
+    top: -9999px;
+    bottom: -9999px;
+    margin: auto;
+    max-width: none; }
+  .b-sale-promotions .owl-carousel .owl-item img {
+    width: auto; }
+  .b-sale-promotions .owl-carousel .prev,
+  .b-sale-promotions .owl-carousel .next {
+    margin-top: -8px; }
+  .b-sale-promotions__datainner {
+    margin-top: 11px;
+    height: 150px;
+    overflow: hidden; }
+    .b-sale-promotions__datainner h5 {
+      margin-top: 0px;
+      margin-bottom: 0.5rem; }
+  .b-sale-promotions__date, .b-sale-promotions__desc {
+    color: #555555;
+    font-size: 1em; }
+  .b-sale-promotions__data {
+    padding: 9px 38px 25px 38px; }
+  .b-sale-promotions__date {
+    display: inline-block; }
+  .b-sale-promotions__name {
+    color: #202020; }
+  .b-sale-promotions__name:hover, .b-sale-promotions__active {
+    color: #202020; }
+  .b-sale-promotions__desc {
+    padding: 5px 0; }
+  .b-sale-promotions__tag {
+    position: absolute;
+    z-index: 90;
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 13px;
+    font-weight: 400;
+    left: 12px;
+    top: 0;
+    letter-spacing: 0.2px; }
+  .b-sale-promotions__tag:hover, .b-sale-promotions__tag:active, .b-sale-promotions__tag:focus {
+    color: #fff;
+    text-decoration: none; }
+  .b-sale-promotions__tag:hover:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; }
+  .b-sale-promotions__tools {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center; }
+  .b-sale-promotions__nav, .b-sale-promotions__showall {
+    display: inline-block;
+    vertical-align: middle; }
+  .b-sale-promotions__showall {
+    font-weight: bold; }
+  @media (min-width: 480px) and (max-width: 991px) {
+    .b-sale-promotions__items.row > div {
+      width: 50%;
+      float: left; } }
+  .b-sale-promotions__title {
+    margin-top: 0;
+    color: #202020; }
+  .b-sale-promotions__title:hover, .b-sale-promotions__title:focus, .b-sale-promotions__title:active {
+    text-decoration: none;
+    color: #202020; }
+  .b-sale-promotions__name {
+    display: block; }
+  .b-sale-promotions__datainner {
+    height: 140px; }
+  .b-sale-promotions__pic {
+    position: relative; }
+  .b-sale-promotions__tag {
+    cursor: pointer;
+    top: auto;
+    bottom: 0; }
+
+/*# sourceMappingURL=style.css.map */

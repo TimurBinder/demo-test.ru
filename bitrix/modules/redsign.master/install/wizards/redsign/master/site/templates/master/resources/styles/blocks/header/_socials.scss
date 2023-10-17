@@ -1,0 +1,97 @@
+@import '../partials.scss';
+
+.b-head-socials {
+  position: relative;
+
+  &__share {
+    position: relative;
+    z-index: 3;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__icons {
+    display: none;
+    white-space: nowrap;
+  }
+
+  &__icon {
+    @include master-icon--light;
+    color: $brand-primary;
+  }
+
+  @media (min-width: $screen-xs-min) {
+    &__icon {
+      color: $gray;
+    }
+  }
+
+  @media (min-width: $screen-xs-min) {
+    &__icon {
+      top: -12px;
+    }
+  }
+
+  @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+
+    &__icons {
+      display: inline-block;
+      visibility: hidden;
+    }
+
+    &.is-open &__icons {
+        visibility: visible;
+    }
+
+    &__icon {
+      position: absolute; 
+      left: 0;
+      top: -11px;
+      transition: transform .3s;
+      z-index: 2;
+      background: #fff;
+      border: 1px solid #eeeeee; 
+      border-radius: 50%;
+    }
+
+    &.is-open &__share {
+      //background: darken($brand-primary, 10%);
+    }
+    &.is-open &__share .icon-svg { 
+      //color: #fff;
+    }
+
+    
+
+    &.is-open &__icon:nth-child(1) {
+      transform: translateX(50px);
+    }
+    &.is-open &__icon:nth-child(2) {
+      transform: translateX(110px);
+    }
+    &.is-open &__icon:nth-child(3) {
+      transform: translateX(170px);
+    }
+    &.is-open &__icon:nth-child(4) {
+      transform: translateX(230px);
+    }
+    &.is-open &__icon:nth-child(5) {
+      transform: translateX(290px); 
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    &__share {
+      display: none;
+    }
+    &__icons {
+      display: inline-block;
+    }
+    &__icon {
+      top: 0;
+      padding: 10px 14px;
+    }
+  }
+}

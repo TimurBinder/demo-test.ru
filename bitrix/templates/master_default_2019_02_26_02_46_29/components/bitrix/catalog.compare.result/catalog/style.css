@@ -1,0 +1,67 @@
+.compare__top:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden; }
+
+.compare {
+  /*
+	&__group {
+		background: $border-color;
+	}
+	*/ }
+  .compare__top {
+    font-size: 0.92857em;
+    margin-bottom: 1.23077em; }
+  .compare__clear {
+    float: right; }
+  .compare__page {
+    position: relative; }
+  .compare__names {
+    font-weight: bold;
+    padding-top: 7px;
+    max-width: 50%; }
+    .compare__names.col {
+      padding-right: 0; }
+    .compare__names table {
+      width: 100%; }
+  .compare__items {
+    background: #fff;
+    overflow: auto;
+    padding-top: 7px; }
+    .compare__items.col {
+      padding-left: 0; }
+  .scroll-wrapper.scrollbar-rail > .compare__items.scroll-scrollx_visible {
+    top: 0;
+    margin-top: 0; }
+  .compare__table {
+    table-layout: fixed; }
+    .compare__table .product-item-container {
+      height: 100%;
+      margin: 0; }
+    .compare__table .product-item-price-container {
+      max-height: none; }
+    .compare__table td {
+      text-align: center; }
+      .compare__table td > iframe {
+        max-width: 100%; }
+    .compare__table thead td {
+      text-align: left; }
+  .compare td,
+  .compare th {
+    border: 1px solid transparent;
+    padding: 9px 8px;
+    vertical-align: top; }
+  .compare thead td.is-hover,
+  .compare thead td.is-hover {
+    border-right-color: red; }
+  .compare__table tbody td {
+    color: #676d72; }
+  .compare__scroll {
+    height: 50px;
+    margin-bottom: 6px;
+    margin-top: -6px; }
+
+/*# sourceMappingURL=style.css.map */

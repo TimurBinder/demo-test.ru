@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/local/templates/roseTown/src/static/js/script.js" => "169743660122584",]; ?>

@@ -1,0 +1,118 @@
+.filter_top {
+  
+  &__item {
+    cursor: pointer;
+    display: inline-block;
+    font-size: pxtoem($font-size-small);
+    font-weight: normal;
+    margin: 0 $line-height-computed*0.4 $line-height-computed 0;
+    text-align: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+    
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &.disabled {
+      cursor: default;
+      opacity: .5;
+    }
+    
+    .owl-item & {
+      // display: block;
+      padding-left:  floor(($grid-gutter-width / 2));
+      padding-right: ceil(($grid-gutter-width / 2));
+    }
+  }
+
+  &__canvas {
+    @extend %vcenter;
+
+    display: block;
+    height: $line-height-computed*5;
+    margin-bottom: $line-height-computed/2;
+  }
+  
+  &__icon {
+    @extend %vcenter__in;
+    
+    max-height: 100%;
+  }
+  
+  .owl-carousel .owl-item &__icon {
+    display: inline-block;
+    width: auto;
+  }
+  
+  &__name {
+    color: $brand-primary;
+    font-size: pxtoem($font-size-small);
+    display: block;
+  }
+  
+  &__btn {
+    border: 2px solid $brand-primary;
+    border-radius: $line-height-computed/2 + $line-height-computed/5 + 2px;
+    color: $gray-max;
+    display: block;
+    padding: $line-height-computed*0.25 $line-height-computed*0.75;
+    transition: all .3s ease;
+  }
+  
+  &__btn:hover,
+  &__btn:active {
+    background-color: darken($btn-primary-bg, 10%);
+    border-color: darken($btn-primary-border, 10%);
+    color: $btn-primary-color;
+  }
+  
+  &__item.checked &__btn {
+    background-color: $btn-primary-bg;
+    border-color: $btn-primary-border;
+    color: $btn-primary-color;
+  }
+
+  &__box {
+    @extend %clearfix;
+    
+    margin-bottom: $line-height-computed;
+
+    & + &,
+    &.checked,
+    &.checked + &.checked {
+      display: none;
+    }
+    
+    &.checked + & {
+      display: block;
+    }
+    
+    .carousel__nav {
+      float: right;
+    }
+  }
+
+  &__scroll {
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  &__scroll &__item {
+    margin-bottom: 0;
+  }
+  
+  &__nav {
+    @extend %owl-nav-ext;
+    
+    margin-bottom: $line-height-computed/2;
+    margin-top: $line-height-computed/2;
+    
+    &.scroll-element .scroll-arrow {
+      cursor: pointer;
+    }
+  }
+}

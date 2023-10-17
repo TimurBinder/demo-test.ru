@@ -1,0 +1,47 @@
+.fancybox-slide .rsform {
+  width: 320px;
+  max-width: 320px;
+}
+.fancybox-title {
+  font-size: $font-size-h4;
+  padding: 15px 35px;
+  background-color: $brand-primary;
+  min-height: 90px;
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+  margin: -25px -24px 20px -25px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.fancybox-close-small:after {
+  background: transparent;
+  font-family: inherit;
+  font-size: 24px;
+  color: #fff;
+  transition: all .3s cubic-bezier(.77,0,.2,.85);
+}
+
+.fancybox-close-small:hover:after {
+  background: transparent;
+  transform: scale(.8);
+  color: #fff;
+}
+.fancybox-close-small:focus:after {
+  outline: 0;
+}
+
+@media (max-width: $screen-xs-min) {
+  .fancybox-slide .rsform  {
+    width: 100%;
+    max-width: 100%;
+  }
+  .fancybox-slide > * {
+    top: 0;
+    left: 0;
+    margin: 0;
+    vertical-align: top;
+  }
+}

@@ -1,0 +1,28 @@
+@mixin master-set-search-width {
+  @media (min-width: $screen-sm-min) {
+
+    & .b-head-search {
+      width: $container-sm;
+    }
+
+    & .b-head-search__icon {
+      right: 15px;
+    }
+    
+    & .b-head-search__form {
+      width: calc(100% - 30px);
+      left: 15px;
+    }
+     
+  }
+  @media (min-width: $screen-md-min) {
+    & .b-head-search {
+      width: $container-md;
+    }
+  }
+  @media (min-width: $screen-lg-min) {
+    & .b-head-search {
+      width: $container-lg;
+    }
+  }
+}

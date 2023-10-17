@@ -1,0 +1,51 @@
+
+.feature {
+  text-align: center;
+
+  &__name {
+    $line-height-current: $font-size-h6 * $line-height-base;
+
+    @extend .text_fade;
+
+    color: $gray-max;
+    font-size: pxtoem($font-size-h6);
+    height: $line-height-current*3;
+    margin: 0 14% $line-height-current;
+
+    &:after {
+      top: $line-height-current*2;
+    }
+  }
+
+  &__icon,
+  &__pic {
+    display: block;
+    margin-bottom: $line-height-computed/4;
+  }
+
+  &__icon {
+    font-size: 66px;
+    fill: $gray-base;
+
+    > svg {
+      @extend .icon-svg;
+
+      display: block;
+      height: 1em !important;
+      margin: auto;
+      width: 1em !important;
+    }
+  }
+
+  &__pic {
+    @extend .vcenter;
+  }
+
+  &__img {
+    @extend .vcenter__in;
+  }
+
+  & > a {
+    text-decoration: none;
+  }
+}

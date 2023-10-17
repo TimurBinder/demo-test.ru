@@ -1,0 +1,90 @@
+@mixin master-icon--light {
+  display: inline-block;
+  padding: 9px 10px;
+  transform: translate3d(0, 0, 0);
+
+  & .icon-svg {
+    font-size: 22px;
+  }
+}
+@mixin master-icon--full {
+  font-size: 20px;
+  display: inline-block;
+  background: #f7f7f8;
+  border-radius: 100%;
+  color: $text-color;
+  border: 1px solid #ccc;
+  margin-right: 7px;
+  width: 44px;
+  height: 44px;
+  padding-top: 5px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+}
+
+@mixin master-icon--cart() {
+  &--cart {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 7px;
+  }
+
+  &--cart &__count {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    background: #222;
+    color: #fff;
+    padding: 4.25px 8.5px;
+    font-size: 10px;
+    border-radius: 100%;
+  }
+}
+
+@mixin master-icon--fill () {
+  &--fill {
+    background: $brand-primary;
+    border-color: $brand-primary;
+  }
+
+  &--fill .icon-svg {
+    color: #fff;
+  }
+}
+
+@mixin master-icon--hover {
+  & {
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  & .icon-svg,
+  &:before {
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+    backface-visibility: hidden;
+  }
+  & .icon-svg {
+    position: relative;
+  }
+  &:before {
+    content: '';
+     width: 120%;
+     height: 120%;
+     position: absolute;
+     transform: rotate(45deg);
+     background: $brand-primary;
+
+     top: 90%;
+     left: -110%;
+  }
+
+  &:hover:before {
+    top: -10%;
+    left: -10%;
+    background: darken($brand-primary, 10%);
+  }
+  &:hover .icon-svg {
+    color: #fff;
+  }
+}

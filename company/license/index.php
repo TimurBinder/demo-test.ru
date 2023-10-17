@@ -1,0 +1,48 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Документы");
+?><?$APPLICATION->IncludeComponent(
+	"altasib:docslist",
+	".default",
+	Array(
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"CACHE_GROUPS" => "N",
+		"CACHE_TIME" => "3600",
+		"CACHE_TYPE" => "A",
+		"COLOR_BG_EVEN" => "#ffffff",
+		"COLOR_BG_HOVER" => "#ededed",
+		"COLOR_BG_ODD" => "#f9f9f9",
+		"COLOR_BORDER" => "#e9e9e9",
+		"COLOR_BORDER_TOP" => "#cccccc",
+		"COLOR_DATE" => "#a8a8a8",
+		"COMPONENT_TEMPLATE" => ".default",
+		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"DISPLAY_DATE" => "Y",
+		"DISPLAY_DOCSSECTION" => "N",
+		"DISPLAY_LIST_SECTION" => "Y",
+		"DISPLAY_SIZE" => "Y",
+		"DISPLAY_TOP_PAGER" => "N",
+		"DOCS_COUNT" => "20",
+		"DOWNLOAD_COUNT" => "Y",
+		"DOWNLOAD_DOC" => $_REQUEST["EID"],
+		"HIDE_DIRECT_PATH" => "Y",
+		"IBLOCK_ID" => "37",
+		"IBLOCK_TYPE" => "altasib_docs",
+		"INCLUDE_INTO_CHAIN" => "N",
+		"JQUERY_EN" => "jquery",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => "modern",
+		"PAGER_TITLE" => "Список документов",
+		"PREVIEW_TRUNCATE_LEN" => "2048",
+		"PROPERTY_CODE" => "200",
+		"SECTIONS_SELECT" => array(0=>"0",),
+		"SORT_BY1" => "NAME",
+		"SORT_BY2" => "NAME",
+		"SORT_ORDER1" => "ASC",
+		"SORT_ORDER2" => "ASC",
+		"USER_SECTION" => $_REQUEST["SID"]
+	)
+);?><br><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

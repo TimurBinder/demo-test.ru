@@ -1,0 +1,2 @@
+<?
+$MESS['REDSIGN.MASTER.TEMPLATE_THEME.TYPE1'] = 'Вариант 1';

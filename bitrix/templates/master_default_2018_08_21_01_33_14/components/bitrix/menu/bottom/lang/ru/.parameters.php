@@ -1,0 +1,5 @@
+<?php
+$MESS['RS.MENU_PARAMETERS_MARK_ITEM'] = 'Выделить пнукты меню';
+$MESS['RS.MENU_PARAMETERS_MARK_ITEM_NONE'] = 'Не выделять';
+$MESS['RS.MENU_PARAMETERS_MARK_ITEM_FIRST'] = 'Первый';
+$MESS['RS.MENU_PARAMETERS_MARK_ITEM_ALL'] = 'Все';

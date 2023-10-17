@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/bitrix/templates/master_default_2019_02_18_07_54_20/assets/css/vendor/msdropdown/dd.css" => "15504656604273",]; ?>

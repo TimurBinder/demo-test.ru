@@ -1,0 +1,12 @@
+.b-head1-contacts {
+
+  display: inline-block;
+  
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media (min-width: $screen-xs) {
+    display: none;
+  }
+}

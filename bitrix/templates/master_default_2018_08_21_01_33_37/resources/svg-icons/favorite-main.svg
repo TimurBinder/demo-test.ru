@@ -1,0 +1,10 @@
+<svg id="favorite-main" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+<defs>
+    <style>
+      .cls-favorite-main {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-favorite-main" d="M3,1H13V16.25L8,12.125,3,16.25V1ZM4,2h8V14L8,10.656,4,14V2Z"/>
+</svg>

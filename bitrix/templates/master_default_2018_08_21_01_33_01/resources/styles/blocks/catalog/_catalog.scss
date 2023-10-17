@@ -1,0 +1,34 @@
+@import 'price';
+@import 'section';
+@import 'sections';
+@import 'line';
+@import 'product-item';
+@import 'buy';
+@import 'sorter';
+@import 'landing';
+
+.catalog {
+
+  &__descr {
+    margin-bottom: $line-height-computed;
+    
+    &-top {
+      margin-top: $line-height-computed*-1;
+    }
+  }
+
+  &__sorter {
+    margin-bottom: $line-height-computed*1.5;
+  }
+
+  .b-reviews {
+    background: #f7f7f7;
+    margin: $line-height-computed*1.5 0;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .b-ask-question--wide:before {
+      display: none;
+    }
+  }
+}

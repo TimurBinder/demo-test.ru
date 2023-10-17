@@ -1,0 +1,36 @@
+.b-head-ask {
+
+  display: inline-block;
+
+  &__text {
+    display: none;
+    position: relative;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &--dotted &__text:before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px dashed $brand-primary;
+    bottom: 0;
+  }
+  &--dotted &:hover &__text:before {
+    border-color: darken($brand-primary, 10%);
+  }
+
+  @media (min-width: $screen-md-min) {
+
+    &__icon {
+      display: none;
+    }
+    &__text {
+      display: block;
+    }
+  }
+}

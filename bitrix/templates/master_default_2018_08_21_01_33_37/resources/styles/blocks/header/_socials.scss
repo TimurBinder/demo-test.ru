@@ -1,0 +1,86 @@
+@import '../partials.scss';
+
+.b-head-socials {
+  position: relative;
+
+  &__share {
+    @include master-icon--full();
+    position: relative;
+    z-index: 2;
+  }
+
+  &__icons {
+    display: none;
+    white-space: nowrap;
+  }
+
+  &__icon {
+    @include master-icon--light;
+    color: $brand-primary;
+  }
+
+  @media (min-width: $screen-xs-min) {
+    &__icon {
+      @include master-icon--full;
+      @include master-icon--hover();
+    }
+    &__share {
+      @include master-icon--hover();
+    }
+  }
+
+  @media (min-width: $screen-xs-min) {
+    &__icon {
+      top: -12px;
+    }
+  }
+
+  @media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+
+    &__icons {
+      display: inline-block;
+    }
+
+    &__icon {
+      position: absolute;
+      left: 0;
+      top: -11px;
+      transition: transform .3s;
+    }
+
+    &.is-open &__share {
+      background: darken($brand-primary, 10%);
+    }
+    &.is-open &__share .icon-svg {
+      color: #fff;
+    }
+
+    &.is-open &__icon:nth-child(1) {
+      transform: translateX(50px);
+    }
+    &.is-open &__icon:nth-child(2) {
+      transform: translateX(100px);
+    }
+    &.is-open &__icon:nth-child(3) {
+      transform: translateX(150px);
+    }
+    &.is-open &__icon:nth-child(4) {
+      transform: translateX(200px);
+    }
+    &.is-open &__icon:nth-child(5) {
+      transform: translateX(250px);
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    &__share {
+      display: none;
+    }
+    &__icons {
+      display: inline-block;
+    }
+    &__icon {
+      top: 0;
+    }
+  }
+}

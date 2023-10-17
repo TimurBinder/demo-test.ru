@@ -1,0 +1,48 @@
+@import 'header/icon';
+@import 'header/logo';
+@import 'header/ask';
+@import 'header/phone';
+@import 'header/contacts';
+@import 'header/socials';
+@import 'header/fly';
+
+@import 'footer/contacts';
+@import 'footer/socials';
+@import 'footer/menu';
+@import 'footer/age-limit';
+
+@import 'catalog/catalog';
+
+@import 'map/contacts';
+@import 'map/google';
+
+@import 'sidebar/nav';
+@import 'sidebar/buttons';
+@import 'sidebar/information';
+@import 'sidebar/map';
+@import 'sidebar/note';
+
+@import 'cart/cart-head';
+@import 'cart/cart-empty';
+@import 'cart/cart';
+
+@import 'back';
+@import 'carousel';
+@import 'comment';
+@import 'favorite';
+@import 'feature';
+@import 'mini_banners';
+@import 'tile';
+@import 'forms';
+@import 'doc';
+@import 'community_widget';
+@import 'partners';
+@import 'gallery_slider';
+@import 'error';
+
+.b-note-text {
+  color: #676d72;
+  margin-bottom: 30px;
+  max-width: 560px;
+  font-size: 12px;
+}

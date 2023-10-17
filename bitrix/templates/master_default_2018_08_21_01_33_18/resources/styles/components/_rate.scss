@@ -1,0 +1,27 @@
+.rate {
+  white-space: nowrap;
+  
+  &__items {
+  }
+  
+  &__item {
+    color: #898886;
+    cursor: pointer;
+    padding: 0 pxtoem(2px);
+    vertical-align: middle;
+    
+    &-icon {
+      font-size: pxtoem(11px);
+      vertical-align: initial;
+    }
+    
+    &.is-voted,
+    &.is-hover {
+      color: #ffd200;
+    }
+  }
+  
+  &__votes {
+    color: $link-color;
+  }
+}

@@ -1,0 +1,2 @@
+<?
+$MESS["RS.MASTER.BC_CATALOG.COMPARE_TITLE"] = "Сравнение";
